@@ -130,10 +130,9 @@ setwd("~/Dropbox/R/genetics-textbook-master")
 
 mitocomp <-  as.tibble(read.csv("data/mito_meio_comp.csv"))
 
-knitr::kable(mitocomp, "latex", digits = 2, align = 'lll', col.names = NULL,  longtable = TRUE, booktabs = TRUE, caption = "Differences between meiosis and mitosis.") %>% kable_styling(latex_options = c("striped", "scale_down", "hold_position")) %>% collapse_rows(columns = 1, latex_hline = "major", valign = "middle") %>% row_spec(c(1,3), extra_latex_after = "\\rowcolor{gray!6}") %>% column_spec(1, width = "10em") %>% column_spec(2, width = "5em") %>% column_spec(3, width = "20em")
-
-#knitr::kable(mitocomp, "html", digits = 2, align = 'lll',  col.names = NULL, longtable = TRUE, booktabs = TRUE, caption = "Differences between meiosis and mitosis.") %>% collapse_rows(columns = 1, latex_hline = "major", valign = "middle") 
+#knitr::kable(mitocomp, "latex", digits = 2, align = 'lll', col.names = NULL,  longtable = TRUE, booktabs = TRUE, caption = "Differences between meiosis and mitosis.") %>% kable_styling(latex_options = c("striped", "scale_down", "hold_position")) %>% collapse_rows(columns = 1, latex_hline = "major", valign = "middle") %>% row_spec(c(1,3), extra_latex_after = "\\rowcolor{gray!6}") %>% column_spec(1, width = "10em") %>% column_spec(2, width = "5em") %>% column_spec(3, width = "20em")
 #
+knitr::kable(mitocomp, "html", digits = 2, align = 'lll',  col.names = NULL, longtable = TRUE, booktabs = TRUE, caption = "Differences between meiosis and mitosis.") %>% collapse_rows(columns = 1, latex_hline = "major", valign = "middle") 
 ```
 
 ## Binary fission
