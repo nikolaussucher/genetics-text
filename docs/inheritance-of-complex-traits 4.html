@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Inheritance of Complex Traits | Textbook For SCI200 Genetics at Roxbury Community College</title>
+  <meta name="description" content="This is a free online texbook for Genetics." />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Inheritance of Complex Traits | Textbook For SCI200 Genetics at Roxbury Community College" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:description" content="This is a free online texbook for Genetics." />
+  <meta name="github-repo" content="nikolaussuchert/genetics" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Inheritance of Complex Traits | Textbook For SCI200 Genetics at Roxbury Community College" />
+  <meta name="twitter:site" content="@NikolausSucher" />
+  <meta name="twitter:description" content="This is a free online texbook for Genetics." />
+  <meta name="twitter:image" content="cover.jpg" />
+
+<meta name="author" content="Assembled by Nikolaus Sucher" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="regulation-of-gene-expression.html"/>
+<link rel="next" href="genetic-control-of-development.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><strong><a href="./">Genetics</a></strong></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><i class="fa fa-check"></i><b>1</b> Genetics: The Science of Genes, Genetic Variation and Heredity</a><ul>
+<li class="chapter" data-level="1.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#mendelian-classical-genetics"><i class="fa fa-check"></i><b>1.1</b> Mendelian (classical) genetics</a></li>
+<li class="chapter" data-level="1.2" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#molecular-genetics"><i class="fa fa-check"></i><b>1.2</b> Molecular genetics</a></li>
+<li class="chapter" data-level="1.3" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#discrete-inheritance-and-mendels-laws"><i class="fa fa-check"></i><b>1.3</b> Discrete inheritance and Mendel’s laws</a></li>
+<li class="chapter" data-level="1.4" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#notation-and-diagrams"><i class="fa fa-check"></i><b>1.4</b> Notation and diagrams</a></li>
+<li class="chapter" data-level="1.5" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#multiple-gene-interactions"><i class="fa fa-check"></i><b>1.5</b> Multiple gene interactions</a></li>
+<li class="chapter" data-level="1.6" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#molecular-basis-for-inheritance"><i class="fa fa-check"></i><b>1.6</b> Molecular basis for inheritance</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#dna-and-chromosomes"><i class="fa fa-check"></i><b>1.6.1</b> DNA and chromosomes</a></li>
+<li class="chapter" data-level="1.6.2" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#reproduction"><i class="fa fa-check"></i><b>1.6.2</b> Reproduction</a></li>
+<li class="chapter" data-level="1.6.3" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#recombination-and-genetic-linkage"><i class="fa fa-check"></i><b>1.6.3</b> Recombination and genetic linkage</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#gene-expression"><i class="fa fa-check"></i><b>1.7</b> Gene expression</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#genetic-code"><i class="fa fa-check"></i><b>1.7.1</b> Genetic code</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#nature-and-nurture"><i class="fa fa-check"></i><b>1.8</b> Nature and nurture</a></li>
+<li class="chapter" data-level="1.9" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#gene-regulation"><i class="fa fa-check"></i><b>1.9</b> Gene regulation</a></li>
+<li class="chapter" data-level="1.10" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#genetic-change"><i class="fa fa-check"></i><b>1.10</b> Genetic change</a><ul>
+<li class="chapter" data-level="1.10.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#mutations"><i class="fa fa-check"></i><b>1.10.1</b> Mutations</a></li>
+</ul></li>
+<li class="chapter" data-level="1.11" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#natural-selection-and-evolution"><i class="fa fa-check"></i><b>1.11</b> Natural selection and evolution</a></li>
+<li class="chapter" data-level="1.12" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#model-organisms"><i class="fa fa-check"></i><b>1.12</b> Model organisms</a></li>
+<li class="chapter" data-level="1.13" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#medical-genetics"><i class="fa fa-check"></i><b>1.13</b> Medical Genetics</a></li>
+<li class="chapter" data-level="1.14" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#research-methods"><i class="fa fa-check"></i><b>1.14</b> Research methods</a><ul>
+<li class="chapter" data-level="1.14.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#dna-sequencing-and-genomics"><i class="fa fa-check"></i><b>1.14.1</b> DNA sequencing and genomics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.15" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#genetic-counseling"><i class="fa fa-check"></i><b>1.15</b> Genetic counseling</a></li>
+<li class="chapter" data-level="1.16" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#human-genetics"><i class="fa fa-check"></i><b>1.16</b> Human genetics</a><ul>
+<li class="chapter" data-level="1.16.1" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#genetic-differences-and-inheritance-patterns"><i class="fa fa-check"></i><b>1.16.1</b> Genetic differences and inheritance patterns</a></li>
+<li class="chapter" data-level="1.16.2" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#autosomal-dominant-inheritance"><i class="fa fa-check"></i><b>1.16.2</b> Autosomal dominant inheritance</a></li>
+<li class="chapter" data-level="1.16.3" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#x-linked-and-y-linked-inheritance"><i class="fa fa-check"></i><b>1.16.3</b> X-linked and Y-linked inheritance</a></li>
+<li class="chapter" data-level="1.16.4" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#pedigrees-analysis"><i class="fa fa-check"></i><b>1.16.4</b> Pedigrees analysis</a></li>
+<li class="chapter" data-level="1.16.5" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#karyotype"><i class="fa fa-check"></i><b>1.16.5</b> Karyotype</a></li>
+</ul></li>
+<li class="chapter" data-level="1.17" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#genomics"><i class="fa fa-check"></i><b>1.17</b> Genomics</a></li>
+<li class="chapter" data-level="1.18" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#population-genetics"><i class="fa fa-check"></i><b>1.18</b> Population genetics</a></li>
+<li class="chapter" data-level="1.19" data-path="genetics-the-science-of-genes-genetic-variation-and-heredity.html"><a href="genetics-the-science-of-genes-genetic-variation-and-heredity.html#eugenics"><i class="fa fa-check"></i><b>1.19</b> Eugenics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html"><i class="fa fa-check"></i><b>2</b> Reproduction of Cells and Organisms</a><ul>
+<li class="chapter" data-level="2.1" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#the-cell"><i class="fa fa-check"></i><b>2.1</b> The Cell</a></li>
+<li class="chapter" data-level="2.2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#prokaryotic-cells"><i class="fa fa-check"></i><b>2.2</b> Prokaryotic cells</a></li>
+<li class="chapter" data-level="2.3" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#eukaryotic-cells"><i class="fa fa-check"></i><b>2.3</b> Eukaryotic cells</a></li>
+<li class="chapter" data-level="2.4" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#genetic-material"><i class="fa fa-check"></i><b>2.4</b> Genetic material</a></li>
+<li class="chapter" data-level="2.5" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#replication"><i class="fa fa-check"></i><b>2.5</b> Replication</a></li>
+<li class="chapter" data-level="2.6" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#reproduction-1"><i class="fa fa-check"></i><b>2.6</b> Reproduction</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#asexual-reproduction"><i class="fa fa-check"></i><b>2.6.1</b> Asexual reproduction</a></li>
+<li class="chapter" data-level="2.6.2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#sexual-reproduction"><i class="fa fa-check"></i><b>2.6.2</b> Sexual reproduction</a></li>
+<li class="chapter" data-level="2.6.3" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#allogamy"><i class="fa fa-check"></i><b>2.6.3</b> Allogamy</a></li>
+<li class="chapter" data-level="2.6.4" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#autogamy"><i class="fa fa-check"></i><b>2.6.4</b> Autogamy</a></li>
+<li class="chapter" data-level="2.6.5" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#mitosis-and-meiosis"><i class="fa fa-check"></i><b>2.6.5</b> Mitosis and meiosis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#binary-fission"><i class="fa fa-check"></i><b>2.7</b> Binary fission</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#fission-of-prokaryotes"><i class="fa fa-check"></i><b>2.7.1</b> Fission of prokaryotes</a></li>
+<li class="chapter" data-level="2.7.2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#process-of-ftsz-dependent-fission"><i class="fa fa-check"></i><b>2.7.2</b> Process of FtsZ-dependent fission</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#mitosis"><i class="fa fa-check"></i><b>2.8</b> Mitosis</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#interphase"><i class="fa fa-check"></i><b>2.8.1</b> Interphase</a></li>
+<li class="chapter" data-level="2.8.2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#preprophase-plant-cells"><i class="fa fa-check"></i><b>2.8.2</b> Preprophase (plant cells)</a></li>
+<li class="chapter" data-level="2.8.3" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#prophase"><i class="fa fa-check"></i><b>2.8.3</b> Prophase</a></li>
+<li class="chapter" data-level="2.8.4" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#prometaphase"><i class="fa fa-check"></i><b>2.8.4</b> Prometaphase</a></li>
+<li class="chapter" data-level="2.8.5" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#metaphase"><i class="fa fa-check"></i><b>2.8.5</b> Metaphase</a></li>
+<li class="chapter" data-level="2.8.6" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#anaphase"><i class="fa fa-check"></i><b>2.8.6</b> Anaphase</a></li>
+<li class="chapter" data-level="2.8.7" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#telophase"><i class="fa fa-check"></i><b>2.8.7</b> Telophase</a></li>
+<li class="chapter" data-level="2.8.8" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#cytokinesis"><i class="fa fa-check"></i><b>2.8.8</b> Cytokinesis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.9" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#meiosis"><i class="fa fa-check"></i><b>2.9</b> Meiosis</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#meiosis-i"><i class="fa fa-check"></i><b>2.9.1</b> Meiosis I</a></li>
+<li class="chapter" data-level="2.9.2" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#meiosis-ii"><i class="fa fa-check"></i><b>2.9.2</b> Meiosis II</a></li>
+<li class="chapter" data-level="2.9.3" data-path="reproduction-of-cells-and-organisms.html"><a href="reproduction-of-cells-and-organisms.html#nondisjunction"><i class="fa fa-check"></i><b>2.9.3</b> Nondisjunction</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html"><i class="fa fa-check"></i><b>3</b> Mendelian Inheritance</a><ul>
+<li class="chapter" data-level="3.1" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#mendels-genetic-discoveries"><i class="fa fa-check"></i><b>3.1</b> Mendel’s genetic discoveries</a></li>
+<li class="chapter" data-level="3.2" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#law-of-dominance-and-uniformity"><i class="fa fa-check"></i><b>3.2</b> Law of Dominance and Uniformity</a></li>
+<li class="chapter" data-level="3.3" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#law-of-segregation-of-genes"><i class="fa fa-check"></i><b>3.3</b> Law of Segregation of genes</a></li>
+<li class="chapter" data-level="3.4" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#law-of-independent-assortment"><i class="fa fa-check"></i><b>3.4</b> Law of Independent Assortment</a></li>
+<li class="chapter" data-level="3.5" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#mendelian-trait"><i class="fa fa-check"></i><b>3.5</b> Mendelian trait</a></li>
+<li class="chapter" data-level="3.6" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#zygosity"><i class="fa fa-check"></i><b>3.6</b> Zygosity</a></li>
+<li class="chapter" data-level="3.7" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#monohybrid-cross"><i class="fa fa-check"></i><b>3.7</b> Monohybrid cross</a></li>
+<li class="chapter" data-level="3.8" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#punnett-square"><i class="fa fa-check"></i><b>3.8</b> Punnett square</a></li>
+<li class="chapter" data-level="3.9" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#dihybrid-cross"><i class="fa fa-check"></i><b>3.9</b> Dihybrid cross</a></li>
+<li class="chapter" data-level="3.10" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#forked-line-method"><i class="fa fa-check"></i><b>3.10</b> Forked-line method</a></li>
+<li class="chapter" data-level="3.11" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#mendelian-traits-in-humans"><i class="fa fa-check"></i><b>3.11</b> Mendelian traits in humans</a></li>
+<li class="chapter" data-level="3.12" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#omim---online-mendelian-inheritance-in-man"><i class="fa fa-check"></i><b>3.12</b> OMIM - Online Mendelian Inheritance in Man</a></li>
+<li class="chapter" data-level="3.13" data-path="mendelian-inheritance.html"><a href="mendelian-inheritance.html#non-mendelian-inheritance"><i class="fa fa-check"></i><b>3.13</b> Non-Mendelian inheritance</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html"><i class="fa fa-check"></i><b>4</b> Chromosomes: The Vectors of Heredity</a><ul>
+<li class="chapter" data-level="4.1" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#prokaryotes"><i class="fa fa-check"></i><b>4.1</b> Prokaryotes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#structure-in-sequences"><i class="fa fa-check"></i><b>4.1.1</b> Structure in sequences</a></li>
+<li class="chapter" data-level="4.1.2" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#dna-packaging"><i class="fa fa-check"></i><b>4.1.2</b> DNA packaging</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#eukaryotes"><i class="fa fa-check"></i><b>4.2</b> Eukaryotes</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#interphase-chromatin"><i class="fa fa-check"></i><b>4.2.1</b> Interphase chromatin</a></li>
+<li class="chapter" data-level="4.2.2" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#metaphase-chromatin-and-division"><i class="fa fa-check"></i><b>4.2.2</b> Metaphase chromatin and division</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#human-chromosomes"><i class="fa fa-check"></i><b>4.3</b> Human chromosomes</a></li>
+<li class="chapter" data-level="4.4" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#number-of-chromosomes-in-various-organisms"><i class="fa fa-check"></i><b>4.4</b> Number of chromosomes in various organisms</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#in-prokaryotes"><i class="fa fa-check"></i><b>4.4.1</b> In prokaryotes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="chromosomes-the-vectors-of-heredity.html"><a href="chromosomes-the-vectors-of-heredity.html#karyotype-1"><i class="fa fa-check"></i><b>4.5</b> Karyotype</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html"><i class="fa fa-check"></i><b>5</b> Chromosomal Disorders</a><ul>
+<li class="chapter" data-level="5.1" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#aberrations"><i class="fa fa-check"></i><b>5.1</b> Aberrations</a></li>
+<li class="chapter" data-level="5.2" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#numerical-abnormalities"><i class="fa fa-check"></i><b>5.2</b> Numerical abnormalities</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#mechanisms"><i class="fa fa-check"></i><b>5.2.1</b> Mechanisms</a></li>
+<li class="chapter" data-level="5.2.2" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#diagnosis"><i class="fa fa-check"></i><b>5.2.2</b> Diagnosis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#structural-abnormalities"><i class="fa fa-check"></i><b>5.3</b> Structural abnormalities</a></li>
+<li class="chapter" data-level="5.4" data-path="chromosomal-disorders.html"><a href="chromosomal-disorders.html#acquired-chromosomal-abnormalities"><i class="fa fa-check"></i><b>5.4</b> Acquired chromosomal abnormalities</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html"><i class="fa fa-check"></i><b>6</b> Linkage And Gene Mapping</a><ul>
+<li class="chapter" data-level="6.1" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#chromosomal-crossover"><i class="fa fa-check"></i><b>6.1</b> Chromosomal crossover</a></li>
+<li class="chapter" data-level="6.2" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#meiotic-recombination"><i class="fa fa-check"></i><b>6.2</b> Meiotic recombination</a></li>
+<li class="chapter" data-level="6.3" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#genetic-linkage"><i class="fa fa-check"></i><b>6.3</b> Genetic linkage</a></li>
+<li class="chapter" data-level="6.4" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#linkage-analysis"><i class="fa fa-check"></i><b>6.4</b> Linkage analysis</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#parametric-linkage-analysis"><i class="fa fa-check"></i><b>6.4.1</b> Parametric linkage analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#quantification-of-genetic-linkage"><i class="fa fa-check"></i><b>6.5</b> Quantification of genetic linkage</a></li>
+<li class="chapter" data-level="6.6" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#gene-mapping"><i class="fa fa-check"></i><b>6.6</b> Gene mapping</a><ul>
+<li class="chapter" data-level="6.6.1" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#genetic-mapping"><i class="fa fa-check"></i><b>6.6.1</b> Genetic mapping</a></li>
+<li class="chapter" data-level="6.6.2" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#physical-mapping"><i class="fa fa-check"></i><b>6.6.2</b> Physical mapping</a></li>
+<li class="chapter" data-level="6.6.3" data-path="linkage-and-gene-mapping.html"><a href="linkage-and-gene-mapping.html#genome-sequencing"><i class="fa fa-check"></i><b>6.6.3</b> Genome sequencing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="dna-and-rna.html"><a href="dna-and-rna.html"><i class="fa fa-check"></i><b>7</b> DNA and RNA</a><ul>
+<li class="chapter" data-level="7.1" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna"><i class="fa fa-check"></i><b>7.1</b> DNA</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="dna-and-rna.html"><a href="dna-and-rna.html#structure-and-composition-of-dna"><i class="fa fa-check"></i><b>7.1.1</b> Structure and composition of DNA</a></li>
+<li class="chapter" data-level="7.1.2" data-path="dna-and-rna.html"><a href="dna-and-rna.html#base-modifications-and-dna-packaging"><i class="fa fa-check"></i><b>7.1.2</b> Base modifications and DNA packaging</a></li>
+<li class="chapter" data-level="7.1.3" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna-damage"><i class="fa fa-check"></i><b>7.1.3</b> DNA damage</a></li>
+<li class="chapter" data-level="7.1.4" data-path="dna-and-rna.html"><a href="dna-and-rna.html#biological-functions-of-dna"><i class="fa fa-check"></i><b>7.1.4</b> Biological functions of DNA</a></li>
+<li class="chapter" data-level="7.1.5" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna-replication"><i class="fa fa-check"></i><b>7.1.5</b> DNA replication</a></li>
+<li class="chapter" data-level="7.1.6" data-path="dna-and-rna.html"><a href="dna-and-rna.html#interactions-of-dna-with-proteins"><i class="fa fa-check"></i><b>7.1.6</b> Interactions of DNA with proteins</a></li>
+<li class="chapter" data-level="7.1.7" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna-modifying-enzymes"><i class="fa fa-check"></i><b>7.1.7</b> DNA-modifying enzymes</a></li>
+<li class="chapter" data-level="7.1.8" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna-recombination"><i class="fa fa-check"></i><b>7.1.8</b> DNA recombination</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="dna-and-rna.html"><a href="dna-and-rna.html#evolution"><i class="fa fa-check"></i><b>7.2</b> Evolution</a></li>
+<li class="chapter" data-level="7.3" data-path="dna-and-rna.html"><a href="dna-and-rna.html#genetic-engineering"><i class="fa fa-check"></i><b>7.3</b> Genetic engineering</a></li>
+<li class="chapter" data-level="7.4" data-path="dna-and-rna.html"><a href="dna-and-rna.html#dna-profiling"><i class="fa fa-check"></i><b>7.4</b> DNA profiling</a></li>
+<li class="chapter" data-level="7.5" data-path="dna-and-rna.html"><a href="dna-and-rna.html#rna"><i class="fa fa-check"></i><b>7.5</b> RNA</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="dna-and-rna.html"><a href="dna-and-rna.html#comparison-with-dna"><i class="fa fa-check"></i><b>7.5.1</b> Comparison with DNA</a></li>
+<li class="chapter" data-level="7.5.2" data-path="dna-and-rna.html"><a href="dna-and-rna.html#structure-of-rna"><i class="fa fa-check"></i><b>7.5.2</b> Structure of RNA</a></li>
+<li class="chapter" data-level="7.5.3" data-path="dna-and-rna.html"><a href="dna-and-rna.html#synthesis-of-rna"><i class="fa fa-check"></i><b>7.5.3</b> Synthesis of RNA</a></li>
+<li class="chapter" data-level="7.5.4" data-path="dna-and-rna.html"><a href="dna-and-rna.html#coding-and-non-coding-rna"><i class="fa fa-check"></i><b>7.5.4</b> Coding and non-coding RNA</a></li>
+<li class="chapter" data-level="7.5.5" data-path="dna-and-rna.html"><a href="dna-and-rna.html#regulatory-rna"><i class="fa fa-check"></i><b>7.5.5</b> Regulatory RNA</a></li>
+<li class="chapter" data-level="7.5.6" data-path="dna-and-rna.html"><a href="dna-and-rna.html#rna-interference-by-mirnas"><i class="fa fa-check"></i><b>7.5.6</b> RNA interference by miRNAs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html"><i class="fa fa-check"></i><b>8</b> Eukaryotic chromosome structure</a><ul>
+<li class="chapter" data-level="8.1" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#nucleosome"><i class="fa fa-check"></i><b>8.1</b> Nucleosome</a></li>
+<li class="chapter" data-level="8.2" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#higher-order-structure-of-dna"><i class="fa fa-check"></i><b>8.2</b> Higher order structure of DNA</a></li>
+<li class="chapter" data-level="8.3" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#modulating-nucleosome-structure"><i class="fa fa-check"></i><b>8.3</b> Modulating nucleosome structure</a></li>
+<li class="chapter" data-level="8.4" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#histone-post-translational-modifications"><i class="fa fa-check"></i><b>8.4</b> Histone post-translational modifications</a></li>
+<li class="chapter" data-level="8.5" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#histones"><i class="fa fa-check"></i><b>8.5</b> Histones</a></li>
+<li class="chapter" data-level="8.6" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#functions-of-histone-modifications"><i class="fa fa-check"></i><b>8.6</b> Functions of histone modifications</a></li>
+<li class="chapter" data-level="8.7" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#chemistry-of-histone-modifications"><i class="fa fa-check"></i><b>8.7</b> Chemistry of histone modifications</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#lysine-methylation"><i class="fa fa-check"></i><b>8.7.1</b> Lysine methylation</a></li>
+<li class="chapter" data-level="8.7.2" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#arginine-methylation"><i class="fa fa-check"></i><b>8.7.2</b> Arginine methylation</a></li>
+<li class="chapter" data-level="8.7.3" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#lysine-acetylation"><i class="fa fa-check"></i><b>8.7.3</b> Lysine acetylation</a></li>
+<li class="chapter" data-level="8.7.4" data-path="eukaryotic-chromosome-structure.html"><a href="eukaryotic-chromosome-structure.html#serinethreoninetyrosine-phosphorylation"><i class="fa fa-check"></i><b>8.7.4</b> Serine/threonine/tyrosine phosphorylation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="dna-replication-1.html"><a href="dna-replication-1.html"><i class="fa fa-check"></i><b>9</b> DNA replication</a><ul>
+<li class="chapter" data-level="9.1" data-path="dna-replication-1.html"><a href="dna-replication-1.html#eukaryotic-dna-replication"><i class="fa fa-check"></i><b>9.1</b> Eukaryotic DNA replication</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="dna-replication-1.html"><a href="dna-replication-1.html#initiation"><i class="fa fa-check"></i><b>9.1.1</b> Initiation</a></li>
+<li class="chapter" data-level="9.1.2" data-path="dna-replication-1.html"><a href="dna-replication-1.html#pre-replication-complex"><i class="fa fa-check"></i><b>9.1.2</b> Pre-replication complex</a></li>
+<li class="chapter" data-level="9.1.3" data-path="dna-replication-1.html"><a href="dna-replication-1.html#preinitiation-complex"><i class="fa fa-check"></i><b>9.1.3</b> Preinitiation complex</a></li>
+<li class="chapter" data-level="9.1.4" data-path="dna-replication-1.html"><a href="dna-replication-1.html#elongation"><i class="fa fa-check"></i><b>9.1.4</b> Elongation</a></li>
+<li class="chapter" data-level="9.1.5" data-path="dna-replication-1.html"><a href="dna-replication-1.html#replication-fork"><i class="fa fa-check"></i><b>9.1.5</b> Replication fork</a></li>
+<li class="chapter" data-level="9.1.6" data-path="dna-replication-1.html"><a href="dna-replication-1.html#leading-strand"><i class="fa fa-check"></i><b>9.1.6</b> Leading strand</a></li>
+<li class="chapter" data-level="9.1.7" data-path="dna-replication-1.html"><a href="dna-replication-1.html#lagging-strand"><i class="fa fa-check"></i><b>9.1.7</b> Lagging strand</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="dna-replication-1.html"><a href="dna-replication-1.html#dna-replication-proteins"><i class="fa fa-check"></i><b>9.2</b> DNA replication proteins</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="dna-replication-1.html"><a href="dna-replication-1.html#termination"><i class="fa fa-check"></i><b>9.2.1</b> Termination</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="dna-replication-1.html"><a href="dna-replication-1.html#regulation-of-replication"><i class="fa fa-check"></i><b>9.3</b> Regulation of replication</a></li>
+<li class="chapter" data-level="9.4" data-path="dna-replication-1.html"><a href="dna-replication-1.html#prokaryotic-dna-replication"><i class="fa fa-check"></i><b>9.4</b> Prokaryotic DNA replication</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="dna-replication-1.html"><a href="dna-replication-1.html#initiation-1"><i class="fa fa-check"></i><b>9.4.1</b> Initiation</a></li>
+<li class="chapter" data-level="9.4.2" data-path="dna-replication-1.html"><a href="dna-replication-1.html#elongation-1"><i class="fa fa-check"></i><b>9.4.2</b> Elongation</a></li>
+<li class="chapter" data-level="9.4.3" data-path="dna-replication-1.html"><a href="dna-replication-1.html#rate-of-replication"><i class="fa fa-check"></i><b>9.4.3</b> Rate of replication</a></li>
+<li class="chapter" data-level="9.4.4" data-path="dna-replication-1.html"><a href="dna-replication-1.html#termination-1"><i class="fa fa-check"></i><b>9.4.4</b> Termination</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html"><i class="fa fa-check"></i><b>10</b> Transcription And RNA Processing</a><ul>
+<li class="chapter" data-level="10.1" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#initiation-2"><i class="fa fa-check"></i><b>10.1</b> Initiation</a></li>
+<li class="chapter" data-level="10.2" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#elongation-2"><i class="fa fa-check"></i><b>10.2</b> Elongation</a></li>
+<li class="chapter" data-level="10.3" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#termination-2"><i class="fa fa-check"></i><b>10.3</b> Termination</a></li>
+<li class="chapter" data-level="10.4" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#inhibitors-of-transcription"><i class="fa fa-check"></i><b>10.4</b> Inhibitors of transcription</a></li>
+<li class="chapter" data-level="10.5" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#transcription-factors"><i class="fa fa-check"></i><b>10.5</b> Transcription factors</a></li>
+<li class="chapter" data-level="10.6" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#rna-processing"><i class="fa fa-check"></i><b>10.6</b> RNA Processing</a></li>
+<li class="chapter" data-level="10.7" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#mrna-processing"><i class="fa fa-check"></i><b>10.7</b> mRNA processing</a><ul>
+<li class="chapter" data-level="10.7.1" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#processing"><i class="fa fa-check"></i><b>10.7.1</b> 5’ processing</a></li>
+<li class="chapter" data-level="10.7.2" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#processing-1"><i class="fa fa-check"></i><b>10.7.2</b> 3’ processing</a></li>
+<li class="chapter" data-level="10.7.3" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#intron-splicing"><i class="fa fa-check"></i><b>10.7.3</b> Intron splicing</a></li>
+</ul></li>
+<li class="chapter" data-level="10.8" data-path="transcription-and-rna-processing.html"><a href="transcription-and-rna-processing.html#reverse-transcription"><i class="fa fa-check"></i><b>10.8</b> Reverse transcription</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html"><i class="fa fa-check"></i><b>11</b> Translation And The Genetic Code</a><ul>
+<li class="chapter" data-level="11.1" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#ribosomes"><i class="fa fa-check"></i><b>11.1</b> Ribosomes</a></li>
+<li class="chapter" data-level="11.2" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#bacterial-ribosomes"><i class="fa fa-check"></i><b>11.2</b> Bacterial ribosomes</a></li>
+<li class="chapter" data-level="11.3" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#eukaryotic-ribosomes"><i class="fa fa-check"></i><b>11.3</b> Eukaryotic ribosomes</a></li>
+<li class="chapter" data-level="11.4" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#translation"><i class="fa fa-check"></i><b>11.4</b> Translation</a></li>
+<li class="chapter" data-level="11.5" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#eukaryotic-translation"><i class="fa fa-check"></i><b>11.5</b> Eukaryotic translation</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#initiation-3"><i class="fa fa-check"></i><b>11.5.1</b> Initiation</a></li>
+<li class="chapter" data-level="11.5.2" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#elongation-3"><i class="fa fa-check"></i><b>11.5.2</b> Elongation</a></li>
+<li class="chapter" data-level="11.5.3" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#termination-3"><i class="fa fa-check"></i><b>11.5.3</b> Termination</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="translation-and-the-genetic-code.html"><a href="translation-and-the-genetic-code.html#genetic-code-1"><i class="fa fa-check"></i><b>11.6</b> Genetic code</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html"><i class="fa fa-check"></i><b>12</b> Mutation, DNA Repair And Recombination</a><ul>
+<li class="chapter" data-level="12.1" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#mutations-1"><i class="fa fa-check"></i><b>12.1</b> Mutations</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#spontaneous-mutations"><i class="fa fa-check"></i><b>12.1.1</b> Spontaneous mutations</a></li>
+<li class="chapter" data-level="12.1.2" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#errors-introduced-during-dna-repair"><i class="fa fa-check"></i><b>12.1.2</b> Errors introduced during DNA repair</a></li>
+<li class="chapter" data-level="12.1.3" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#induced-mutations"><i class="fa fa-check"></i><b>12.1.3</b> Induced mutations</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#classification-of-mutations"><i class="fa fa-check"></i><b>12.2</b> Classification of mutations</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#by-effect-on-function"><i class="fa fa-check"></i><b>12.2.1</b> By effect on function</a></li>
+<li class="chapter" data-level="12.2.2" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#by-effect-on-fitness"><i class="fa fa-check"></i><b>12.2.2</b> By effect on fitness</a></li>
+<li class="chapter" data-level="12.2.3" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#by-impact-on-protein-sequence"><i class="fa fa-check"></i><b>12.2.3</b> By impact on protein sequence</a></li>
+<li class="chapter" data-level="12.2.4" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#by-inheritance"><i class="fa fa-check"></i><b>12.2.4</b> By inheritance</a></li>
+<li class="chapter" data-level="12.2.5" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#harmful-mutations"><i class="fa fa-check"></i><b>12.2.5</b> Harmful mutations</a></li>
+<li class="chapter" data-level="12.2.6" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#beneficial-mutations"><i class="fa fa-check"></i><b>12.2.6</b> Beneficial mutations</a></li>
+<li class="chapter" data-level="12.2.7" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#somatic-mutation"><i class="fa fa-check"></i><b>12.2.7</b> Somatic mutation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#mutagenesis"><i class="fa fa-check"></i><b>12.3</b> Mutagenesis</a></li>
+<li class="chapter" data-level="12.4" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#complementation-test"><i class="fa fa-check"></i><b>12.4</b> Complementation test</a></li>
+<li class="chapter" data-level="12.5" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#dna-damage-1"><i class="fa fa-check"></i><b>12.5</b> DNA damage</a></li>
+<li class="chapter" data-level="12.6" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#dna-repair"><i class="fa fa-check"></i><b>12.6</b> DNA repair</a></li>
+<li class="chapter" data-level="12.7" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#translesion-synthesis"><i class="fa fa-check"></i><b>12.7</b> Translesion synthesis</a></li>
+<li class="chapter" data-level="12.8" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#global-response-to-dna-damage"><i class="fa fa-check"></i><b>12.8</b> Global response to DNA damage</a></li>
+<li class="chapter" data-level="12.9" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#dna-damage-checkpoints"><i class="fa fa-check"></i><b>12.9</b> DNA damage checkpoints</a></li>
+<li class="chapter" data-level="12.10" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#the-prokaryotic-sos-response"><i class="fa fa-check"></i><b>12.10</b> The prokaryotic SOS response</a></li>
+<li class="chapter" data-level="12.11" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#eukaryotic-transcriptional-responses-to-dna-damage"><i class="fa fa-check"></i><b>12.11</b> Eukaryotic transcriptional responses to DNA damage</a></li>
+<li class="chapter" data-level="12.12" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#hereditary-dna-repair-disorders"><i class="fa fa-check"></i><b>12.12</b> Hereditary DNA repair disorders</a></li>
+<li class="chapter" data-level="12.13" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#dna-recombination-mechanisms"><i class="fa fa-check"></i><b>12.13</b> DNA recombination mechanisms</a></li>
+<li class="chapter" data-level="12.14" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#dsbr-pathway"><i class="fa fa-check"></i><b>12.14</b> DSBR pathway</a></li>
+<li class="chapter" data-level="12.15" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#sdsa-pathway"><i class="fa fa-check"></i><b>12.15</b> SDSA pathway</a></li>
+<li class="chapter" data-level="12.16" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#ssa-pathway"><i class="fa fa-check"></i><b>12.16</b> SSA pathway</a></li>
+<li class="chapter" data-level="12.17" data-path="mutation-dna-repair-and-recombination.html"><a href="mutation-dna-repair-and-recombination.html#homologous-recombination-in-bacteria"><i class="fa fa-check"></i><b>12.17</b> Homologous recombination in bacteria</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html"><i class="fa fa-check"></i><b>13</b> Techniques of Molecular Genetics</a><ul>
+<li class="chapter" data-level="13.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#polymerase-chain-reaction"><i class="fa fa-check"></i><b>13.1</b> Polymerase chain reaction</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#procedure"><i class="fa fa-check"></i><b>13.1.1</b> Procedure</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#dna-sequencing"><i class="fa fa-check"></i><b>13.2</b> DNA Sequencing</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#sanger-sequencing"><i class="fa fa-check"></i><b>13.2.1</b> Sanger sequencing</a></li>
+<li class="chapter" data-level="13.2.2" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#high-throughput-sequencing-hts-methods"><i class="fa fa-check"></i><b>13.2.2</b> High-throughput sequencing (HTS) methods</a></li>
+<li class="chapter" data-level="13.2.3" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#pyrosequencing"><i class="fa fa-check"></i><b>13.2.3</b> 454 pyrosequencing</a></li>
+<li class="chapter" data-level="13.2.4" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#illumina-solexa-sequencing"><i class="fa fa-check"></i><b>13.2.4</b> Illumina (Solexa) sequencing</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#rna-seq"><i class="fa fa-check"></i><b>13.3</b> RNA-Seq</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#single-cell-rna-sequencing-scrna-seq"><i class="fa fa-check"></i><b>13.3.1</b> Single-cell RNA sequencing (scRNA-Seq)</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#dna-microarray"><i class="fa fa-check"></i><b>13.4</b> DNA microarray</a></li>
+<li class="chapter" data-level="13.5" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#recombinant-dna"><i class="fa fa-check"></i><b>13.5</b> Recombinant DNA</a></li>
+<li class="chapter" data-level="13.6" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#molecular-cloning"><i class="fa fa-check"></i><b>13.6</b> Molecular cloning</a><ul>
+<li class="chapter" data-level="13.6.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#procedures"><i class="fa fa-check"></i><b>13.6.1</b> Procedures</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#mutagenesis-1"><i class="fa fa-check"></i><b>13.7</b> Mutagenesis</a><ul>
+<li class="chapter" data-level="13.7.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#random-mutagenesis"><i class="fa fa-check"></i><b>13.7.1</b> Random mutagenesis</a></li>
+<li class="chapter" data-level="13.7.2" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#site-directed-mutagenesis"><i class="fa fa-check"></i><b>13.7.2</b> Site-directed mutagenesis</a></li>
+<li class="chapter" data-level="13.7.3" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#gene-synthesis"><i class="fa fa-check"></i><b>13.7.3</b> Gene synthesis</a></li>
+</ul></li>
+<li class="chapter" data-level="13.8" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#gene-knockout"><i class="fa fa-check"></i><b>13.8</b> Gene knockout</a></li>
+<li class="chapter" data-level="13.9" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#conditional-gene-knockout"><i class="fa fa-check"></i><b>13.9</b> Conditional gene knockout</a></li>
+<li class="chapter" data-level="13.10" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#gene-knock-in"><i class="fa fa-check"></i><b>13.10</b> Gene knock-in</a></li>
+<li class="chapter" data-level="13.11" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#rna-interference"><i class="fa fa-check"></i><b>13.11</b> RNA interference</a><ul>
+<li class="chapter" data-level="13.11.1" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#transcriptional-silencing"><i class="fa fa-check"></i><b>13.11.1</b> Transcriptional silencing</a></li>
+<li class="chapter" data-level="13.11.2" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#gene-knockdown"><i class="fa fa-check"></i><b>13.11.2</b> Gene knockdown</a></li>
+</ul></li>
+<li class="chapter" data-level="13.12" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#cre-lox-recombination"><i class="fa fa-check"></i><b>13.12</b> Cre-Lox recombination</a></li>
+<li class="chapter" data-level="13.13" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#crispr-gene-editing"><i class="fa fa-check"></i><b>13.13</b> CRISPR gene editing</a></li>
+<li class="chapter" data-level="13.14" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#gene-drive"><i class="fa fa-check"></i><b>13.14</b> Gene drive</a></li>
+<li class="chapter" data-level="13.15" data-path="techniques-of-molecular-genetics.html"><a href="techniques-of-molecular-genetics.html#human-germline-modification"><i class="fa fa-check"></i><b>13.15</b> Human germline modification</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="genomics-1.html"><a href="genomics-1.html"><i class="fa fa-check"></i><b>14</b> Genomics</a><ul>
+<li class="chapter" data-level="14.1" data-path="genomics-1.html"><a href="genomics-1.html#complete-genomes"><i class="fa fa-check"></i><b>14.1</b> Complete genomes</a></li>
+<li class="chapter" data-level="14.2" data-path="genomics-1.html"><a href="genomics-1.html#the-omics-revolution"><i class="fa fa-check"></i><b>14.2</b> The “omics” revolution</a></li>
+<li class="chapter" data-level="14.3" data-path="genomics-1.html"><a href="genomics-1.html#genome-analysis"><i class="fa fa-check"></i><b>14.3</b> Genome analysis</a><ul>
+<li class="chapter" data-level="14.3.1" data-path="genomics-1.html"><a href="genomics-1.html#sequencing"><i class="fa fa-check"></i><b>14.3.1</b> Sequencing</a></li>
+<li class="chapter" data-level="14.3.2" data-path="genomics-1.html"><a href="genomics-1.html#shotgun-sequencing"><i class="fa fa-check"></i><b>14.3.2</b> Shotgun sequencing</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="genomics-1.html"><a href="genomics-1.html#assembly"><i class="fa fa-check"></i><b>14.4</b> Assembly</a></li>
+<li class="chapter" data-level="14.5" data-path="genomics-1.html"><a href="genomics-1.html#finishing"><i class="fa fa-check"></i><b>14.5</b> Finishing</a></li>
+<li class="chapter" data-level="14.6" data-path="genomics-1.html"><a href="genomics-1.html#annotation"><i class="fa fa-check"></i><b>14.6</b> Annotation</a></li>
+<li class="chapter" data-level="14.7" data-path="genomics-1.html"><a href="genomics-1.html#sequencing-pipelines-and-databases"><i class="fa fa-check"></i><b>14.7</b> Sequencing pipelines and databases</a></li>
+<li class="chapter" data-level="14.8" data-path="genomics-1.html"><a href="genomics-1.html#functional-genomics"><i class="fa fa-check"></i><b>14.8</b> Functional genomics</a></li>
+<li class="chapter" data-level="14.9" data-path="genomics-1.html"><a href="genomics-1.html#structural-genomics"><i class="fa fa-check"></i><b>14.9</b> Structural genomics</a></li>
+<li class="chapter" data-level="14.10" data-path="genomics-1.html"><a href="genomics-1.html#epigenomics"><i class="fa fa-check"></i><b>14.10</b> Epigenomics</a></li>
+<li class="chapter" data-level="14.11" data-path="genomics-1.html"><a href="genomics-1.html#metagenomics"><i class="fa fa-check"></i><b>14.11</b> Metagenomics</a></li>
+<li class="chapter" data-level="14.12" data-path="genomics-1.html"><a href="genomics-1.html#applications-of-genomics"><i class="fa fa-check"></i><b>14.12</b> Applications of genomics</a><ul>
+<li class="chapter" data-level="14.12.1" data-path="genomics-1.html"><a href="genomics-1.html#genomic-medicine"><i class="fa fa-check"></i><b>14.12.1</b> Genomic medicine</a></li>
+<li class="chapter" data-level="14.12.2" data-path="genomics-1.html"><a href="genomics-1.html#synthetic-biology-and-bioengineering"><i class="fa fa-check"></i><b>14.12.2</b> Synthetic biology and bioengineering</a></li>
+<li class="chapter" data-level="14.12.3" data-path="genomics-1.html"><a href="genomics-1.html#conservation-genomics"><i class="fa fa-check"></i><b>14.12.3</b> Conservation genomics</a></li>
+</ul></li>
+<li class="chapter" data-level="14.13" data-path="genomics-1.html"><a href="genomics-1.html#genome-wide-association-study"><i class="fa fa-check"></i><b>14.13</b> Genome-wide association study</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="applications-of-molecular-genetics.html"><a href="applications-of-molecular-genetics.html"><i class="fa fa-check"></i><b>15</b> Applications of Molecular Genetics</a><ul>
+<li class="chapter" data-level="15.1" data-path="applications-of-molecular-genetics.html"><a href="applications-of-molecular-genetics.html#genetic-testing"><i class="fa fa-check"></i><b>15.1</b> Genetic testing</a></li>
+<li class="chapter" data-level="15.2" data-path="applications-of-molecular-genetics.html"><a href="applications-of-molecular-genetics.html#genetically-modified-organisms"><i class="fa fa-check"></i><b>15.2</b> Genetically modified organisms</a></li>
+<li class="chapter" data-level="15.3" data-path="applications-of-molecular-genetics.html"><a href="applications-of-molecular-genetics.html#gene-therapy"><i class="fa fa-check"></i><b>15.3</b> Gene therapy</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html"><i class="fa fa-check"></i><b>16</b> Regulation of Gene Expression</a><ul>
+<li class="chapter" data-level="16.1" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#the-lac-operon"><i class="fa fa-check"></i><b>16.1</b> The <em>lac</em> operon</a></li>
+<li class="chapter" data-level="16.2" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#the-trp-operon"><i class="fa fa-check"></i><b>16.2</b> The <em>trp</em> operon</a></li>
+<li class="chapter" data-level="16.3" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#regulated-stages-of-gene-expression"><i class="fa fa-check"></i><b>16.3</b> Regulated stages of gene expression</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#regulation-of-transciption-by-dna-packing"><i class="fa fa-check"></i><b>16.3.1</b> Regulation of transciption by DNA packing</a></li>
+<li class="chapter" data-level="16.3.2" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#regulation-of-transciption-by-dna-modification"><i class="fa fa-check"></i><b>16.3.2</b> Regulation of transciption by DNA modification</a></li>
+<li class="chapter" data-level="16.3.3" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#regulation-of-rna-polymerase"><i class="fa fa-check"></i><b>16.3.3</b> Regulation of RNA polymerase</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#post-transcriptional-regulation"><i class="fa fa-check"></i><b>16.4</b> Post-transcriptional regulation</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#three-prime-untranslated-regions-and-micrornas"><i class="fa fa-check"></i><b>16.4.1</b> Three prime untranslated regions and microRNAs</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="regulation-of-gene-expression.html"><a href="regulation-of-gene-expression.html#regulation-of-translation"><i class="fa fa-check"></i><b>16.5</b> Regulation of translation</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="inheritance-of-complex-traits.html"><a href="inheritance-of-complex-traits.html"><i class="fa fa-check"></i><b>17</b> Inheritance of Complex Traits</a><ul>
+<li class="chapter" data-level="17.1" data-path="inheritance-of-complex-traits.html"><a href="inheritance-of-complex-traits.html#qtl-mapping"><i class="fa fa-check"></i><b>17.1</b> QTL mapping</a></li>
+<li class="chapter" data-level="17.2" data-path="inheritance-of-complex-traits.html"><a href="inheritance-of-complex-traits.html#quantitative-traits"><i class="fa fa-check"></i><b>17.2</b> Quantitative traits</a></li>
+<li class="chapter" data-level="17.3" data-path="inheritance-of-complex-traits.html"><a href="inheritance-of-complex-traits.html#expression-quantitative-trait-loci"><i class="fa fa-check"></i><b>17.3</b> Expression quantitative trait loci</a></li>
+<li class="chapter" data-level="17.4" data-path="inheritance-of-complex-traits.html"><a href="inheritance-of-complex-traits.html#gwas"><i class="fa fa-check"></i><b>17.4</b> GWAS</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="genetic-control-of-development.html"><a href="genetic-control-of-development.html"><i class="fa fa-check"></i><b>18</b> Genetic Control of Development</a><ul>
+<li class="chapter" data-level="18.1" data-path="genetic-control-of-development.html"><a href="genetic-control-of-development.html#the-control-of-body-structure"><i class="fa fa-check"></i><b>18.1</b> The control of body structure</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="genetic-control-of-development.html"><a href="genetic-control-of-development.html#deep-homology"><i class="fa fa-check"></i><b>18.1.1</b> Deep homology</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="genetic-control-of-development.html"><a href="genetic-control-of-development.html#gene-toolkit"><i class="fa fa-check"></i><b>18.2</b> Gene toolkit</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html"><i class="fa fa-check"></i><b>19</b> Evolutionary Genetics</a><ul>
+<li class="chapter" data-level="19.1" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#the-modern-synthesis-of-the-early-20th-century"><i class="fa fa-check"></i><b>19.1</b> The modern synthesis of the early 20th century</a></li>
+<li class="chapter" data-level="19.2" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#four-processes"><i class="fa fa-check"></i><b>19.2</b> Four processes</a><ul>
+<li class="chapter" data-level="19.2.1" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#selection"><i class="fa fa-check"></i><b>19.2.1</b> Selection</a></li>
+<li class="chapter" data-level="19.2.2" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#dominance"><i class="fa fa-check"></i><b>19.2.2</b> Dominance</a></li>
+<li class="chapter" data-level="19.2.3" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#epistasis"><i class="fa fa-check"></i><b>19.2.3</b> Epistasis</a></li>
+<li class="chapter" data-level="19.2.4" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#mutation"><i class="fa fa-check"></i><b>19.2.4</b> Mutation</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="evolutionary-genetics.html"><a href="evolutionary-genetics.html#human-genetic-variation"><i class="fa fa-check"></i><b>19.3</b> Human genetic variation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Textbook For SCI200 Genetics at Roxbury Community College</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="inheritance-of-complex-traits" class="section level1">
+<h1><span class="header-section-number">17</span> Inheritance of Complex Traits</h1>
+<p>Complex traits, also known as quantitative traits, are traits that do not behave according to simple Mendelian inheritance laws. More specifically, their inheritance cannot be explained by the genetic segregation of a single gene. Such traits show a continuous range of variation and are influenced by both environmental and genetic factors. Compared to strictly Mendelian traits, complex traits are far more common, and because they can be hugely polygenic, they are studied using statistical techniques such as QTL mapping rather than classical genetics methods. Examples of complex traits include height, circadian rhythms, enzyme kinetics, and many diseases including diabetes and Parkinson’s disease. One major goal of genetic research today is to better understand the molecular mechanisms through which genetic variants act to influence complex traits.</p>
+<p>When Mendel’s work on inheritance was rediscovered in 1900, scientists debated whether Mendel’s laws could account for the continuous variation observed for many traits. One group known as the biometricians argued that continuous traits such as height were largely heritable, but could not be explained by the inheritance of single Mendelian genetic factors. Work by Ronald Fisher in 1918 mostly resolved debate by demonstrating that the variation in continuous traits could be accounted for if multiple such factors contributed additively to each trait. However, the number of genes involved in such traits remained undetermined; until recently, genetic loci were expected to have moderate effect sizes and each explain several percent of heritability. After the conclusion of the Human Genome Project in 2001, it seemed that the sequencing and mapping of many individuals would soon allow for a complete understanding of traits’ genetic architectures. However, variants discovered through genome-wide association studies (GWASs) accounted for only a small percentage of predicted heritability; for example, while height is estimated to be 80-90% heritable, early studies only identified variants accounting for 5% of this heritability. Later research showed that most missing heritability could be accounted for by common variants missed by GWASs because their effect sizes fell below significance thresholds; a smaller percentage is accounted for by rare variants with larger effect sizes, although in certain traits such as autism, rare variants play a more dominant role. While many genetic factors involved in complex traits have been identified, determining their specific contributions to phenotypes—specifically, the molecular mechanisms through which they act—remains a major challenge.</p>
+<div id="qtl-mapping" class="section level2">
+<h2><span class="header-section-number">17.1</span> QTL mapping</h2>
+<p>A quantitative trait locus (QTL) is a region of DNA which is associated with a particular phenotypic trait, which varies in degree and which can be attributed to polygenic effects, i.e., the product of two or more genes, and their environment. These QTLs are often found on different chromosomes. The number of QTLs which explain variation in the phenotypic trait indicates the genetic architecture of a trait. It may indicate that plant height is controlled by many genes of small effect, or by a few genes of large effect.</p>
+<p>Typically, QTLs underlie continuous traits (those traits which vary continuously, e.g. height) as opposed to discrete traits (traits that have two or several character values, e.g. red hair in humans, a recessive trait, or smooth vs. wrinkled peas used by Mendel in his experiments).</p>
+<p>Moreover, a single phenotypic trait is usually determined by many genes. Consequently, many QTLs are associated with a single trait. Another use of QTLs is to identify candidate genes underlying a trait. Once a region of DNA is identified as contributing to a phenotype, it can be sequenced. The DNA sequence of any genes in this region can then be compared to a database of DNA for genes whose function is already known, being this task fundamental for marker-assisted crop improvement.</p>
+<p>Mendelian inheritance was rediscovered at the beginning of the 20th century. As Mendel’s ideas spread, geneticists began to connect Mendel’s rules of inheritance of single factors to Darwinian evolution. For early geneticists, it was not immediately clear that the smooth variation in traits like body size (i.e., Incomplete Dominance) was caused by the inheritance of single genetic factors. Although Darwin himself observed that inbred features of fancy pigeons were inherited in accordance with Mendel’s laws (although Darwin didn’t actually know about Mendel’s ideas when he made the observation), it was not obvious that these features selected by fancy pigeon breeders can similarly explain quantitative variation in nature.</p>
+<p>An early attempt by William Ernest Castle to unify the laws of Mendelian inheritance with Darwin’s theory of speciation invoked the idea that species become distinct from one another as one species or the other acquires a novel Mendelian factor. Castle’s conclusion was based on the observation that novel traits that could be studied in the lab and that show Mendelian inheritance patterns reflect a large deviation from the wild type, and Castle believed that acquisition of such features is the basis of “discontinuous variation” that characterizes speciation. Darwin discussed the inheritance of similar mutant features but did not invoke them as a requirement of speciation. Instead Darwin used the emergence of such features in breeding populations as evidence that mutation can occur at random within breeding populations, which is a central premise of his model of selection in nature. Later in his career, Castle would refine his model for speciation to allow for small variation to contribute to speciation over time. He also was able to demonstrate this point by selectively breeding laboratory populations of rats to obtain a hooded phenotype over several generations.</p>
+<p>Castle’s was perhaps the first attempt made in the scientific literature to direct evolution by artificial selection of a trait with continuous underlying variation, however the practice had previously been widely employed in the development of agriculture to obtain livestock or plants with favorable features from populations that show quantitative variation in traits like body size or grain yield.</p>
+<p>Castle’s work was among the first to attempt to unify the recently rediscovered laws of Mendelian inheritance with Darwin’s theory of evolution. Still, it would be almost thirty years until the theoretical framework for evolution of complex traits would be widely formalized. In an early summary of the theory of evolution of continuous variation, Sewall Wright, a graduate student who trained under Castle, summarized contemporary thinking about the genetic basis of quantitative natural variation: “As genetic studies continued, ever smaller differences were found to mendelize, and any character, sufficiently investigated, turned out to be affected by many factors.” Wright and others formalized population genetics theory that had been worked out over the preceding 30 years explaining how such traits can be inherited and create stably breeding populations with unique characteristics. Quantitative trait genetics today leverages Wright’s observations about the statistical relationship between genotype and phenotype in families and populations to understand how certain genetic features can affect variation in natural and derived populations.</p>
+</div>
+<div id="quantitative-traits" class="section level2">
+<h2><span class="header-section-number">17.2</span> Quantitative traits</h2>
+<p>Polygenic inheritance refers to inheritance of a phenotypic characteristic (trait) that is attributable to two or more genes and can be measured quantitatively. Multifactorial inheritance refers to polygenic inheritance that also includes interactions with the environment. Unlike monogenic traits, polygenic traits do not follow patterns of Mendelian inheritance (discrete categories). Instead, their phenotypes typically vary along a continuous gradient depicted by a bell curve.</p>
+<p>An example of a polygenic trait is human skin color variation. Several genes factor into determining a person’s natural skin color, so modifying only one of those genes can change skin color slightly or in some cases, such as for SLC24A5, moderately. Many disorders with genetic components are polygenic, including autism, cancer, diabetes and numerous others. Most phenotypic characteristics are the result of the interaction of multiple genes.</p>
+<p>Examples of disease processes generally considered to be results of many contributing factors:</p>
+<p><strong>Congenital malformation</strong></p>
+<ul>
+<li>Cleft palate</li>
+<li>Congenital dislocation of the hip</li>
+<li>Congenital heart defects</li>
+<li>Neural tube defects</li>
+<li>Pyloric stenosis</li>
+<li>Talipes</li>
+</ul>
+<p><strong>Adult onset diseases</strong></p>
+<ul>
+<li>Diabetes Mellitus</li>
+<li>Cancer</li>
+<li>Glaucoma</li>
+<li>Hypertension</li>
+<li>Ischaemic heart disease</li>
+<li>Bipolar disorder</li>
+<li>Schizophrenia</li>
+<li>Psoriasis</li>
+<li>Thyroid diseases</li>
+<li>Alzheimer’s Disease</li>
+</ul>
+<p>Multifactorially inherited diseases are said to constitute the majority of genetic disorders affecting humans which will result in hospitalization or special care of some kind.</p>
+<p>Traits controlled both by the environment and by genetic factors are called multifactorial. Usually, multifactorial traits outside of illness result in what we see as continuous characteristics in organisms, especially human organisms such as: height, skin color, and body mass. All of these phenotypes are complicated by a great deal of give-and-take between genes and environmental effects. The continuous distribution of traits such as height and skin color described above, reflects the action of genes that do not manifest typical patterns of dominance and recessiveness. Instead the contributions of each involved locus are thought to be additive. Writers have distinguished this kind of inheritance as polygenic, or quantitative inheritance.</p>
+<p>Thus, due to the nature of polygenic traits, inheritance will not follow the same pattern as a simple monohybrid or dihybrid cross. Polygenic inheritance can be explained as Mendelian inheritance at many loci, resulting in a trait which is normally-distributed. If n is the number of involved loci, then the coefficients of the binomial expansion of (a + b)2n will give the frequency of distribution of all n allele combinations. For a sufficiently high values of n, this binomial distribution will begin to resemble a normal distribution. From this viewpoint, a disease state will become apparent at one of the tails of the distribution, past some threshold value. Disease states of increasing severity will be expected the further one goes past the threshold and away from the mean.</p>
+<p>Heritable disease and multifactorial inheritance</p>
+<p>A mutation resulting in a disease state is often recessive, so both alleles must be mutant in order for the disease to be expressed phenotypically. A disease or syndrome may also be the result of the expression of mutant alleles at more than one locus. When more than one gene is involved, with or without the presence of environmental triggers, we say that the disease is the result of multifactorial inheritance.</p>
+<p>The more genes involved in the cross, the more the distribution of the genotypes will resemble a normal, or Gaussian distribution. This shows that multifactorial inheritance is polygenic, and genetic frequencies can be predicted by way of a polyhybrid Mendelian cross. Phenotypic frequencies are a different matter, especially if they are complicated by environmental factors.</p>
+<p>The paradigm of polygenic inheritance as being used to define multifactorial disease has encountered much disagreement. Turnpenny (2004) discusses how simple polygenic inheritance cannot explain some diseases such as the onset of Type I diabetes mellitus, and that in cases such as these, not all genes are thought to make an equal contribution.</p>
+<p>The assumption of polygenic inheritance is that all involved loci make an equal contribution to the symptoms of the disease. This should result in a normal curve distribution of genotypes. When it does not, the idea of polygenetic inheritance cannot be supported for that illness.</p>
+<p><strong>Examples</strong></p>
+<p>The above are well-known examples of diseases having both genetic and environmental components. Other examples involve atopic diseases such as eczema or dermatitis;spina bifida (open spine), and anencephaly (open skull).</p>
+<p>While schizophrenia is widely believed to be multifactorially genetic by biopsychiatrists, no characteristic genetic markers have been determined with any certainty.</p>
+<p>If it is shown that the brothers and sisters of the patient have the disease, then there is a strong chance that the disease is genetic[citation needed] and that the patient will also be a genetic carrier. This is not quite enough as it also needs to be proven that the pattern of inheritance is non-Mendelian. This would require studying dozens, even hundreds of different family pedigrees before a conclusion of multifactorial inheritance is drawn. This often takes several years.</p>
+<p>If multifactorial inheritance is indeed the case, then the chance of the patient contracting the disease is reduced only if cousins and more distant relatives have the disease. It must be stated that while multifactorially-inherited diseases tend to run in families, inheritance will not follow the same pattern as a simple monohybrid or dihybrid cross.</p>
+<p>If a genetic cause is suspected and little else is known about the illness, then it remains to be seen exactly how many genes are involved in the phenotypic expression of the disease. Once that is determined, the question must be answered: if two people have the required genes, why are there differences in expression between them? Generally, what makes the two individuals different are likely to be environmental factors. Due to the involved nature of genetic investigations needed to determine such inheritance patterns, this is not usually the first avenue of investigation one would choose to determine etiology.</p>
+<p><strong>QTL mapping</strong></p>
+<p>For organisms whose genomes are known, one might now try to exclude genes in the identified region whose function is known with some certainty not to be connected with the trait in question. If the genome is not available, it may be an option to sequence the identified region and determine the putative functions of genes by their similarity to genes with known function, usually in other genomes. This can be done using BLAST, an online tool that allows users to enter a primary sequence and search for similar sequences within the BLAST database of genes from various organisms. It is often not the actual gene underlying the phenotypic trait, but rather a region of DNA that is closely linked with the gene[17] [18]</p>
+<p>Another interest of statistical geneticists using QTL mapping is to determine the complexity of the genetic architecture underlying a phenotypic trait. For example, they may be interested in knowing whether a phenotype is shaped by many independent loci, or by a few loci, and do those loci interact. This can provide information on how the phenotype may be evolving.[citation needed]</p>
+<p>In a recent development, classical QTL analyses were combined with gene expression profiling i.e. by DNA microarrays. Such expression QTLs (eQTLs) describe cis- and trans-controlling elements for the expression of often disease-associated genes.[19] Observed epistatic effects have been found beneficial to identify the gene responsible by a cross-validation of genes within the interacting loci with metabolic pathway- and scientific literature databases.</p>
+<p>Analysis of variance</p>
+<p>The simplest method for QTL mapping is analysis of variance (ANOVA, sometimes called “marker regression”) at the marker loci. In this method, in a backcross, one may calculate a t-statistic to compare the averages of the two marker genotype groups. For other types of crosses (such as the intercross), where there are more than two possible genotypes, one uses a more general form of ANOVA, which provides a so-called F-statistic. The ANOVA approach for QTL mapping has three important weaknesses. First, we do not receive separate estimates of QTL location and QTL effect. QTL location is indicated only by looking at which markers give the greatest differences between genotype group averages, and the apparent QTL effect at a marker will be smaller than the true QTL effect as a result of recombination between the marker and the QTL. Second, we must discard individuals whose genotypes are missing at the marker. Third, when the markers are widely spaced, the QTL may be quite far from all markers, and so the power for QTL detection will decrease.</p>
+<p>Interval mapping</p>
+<p>Lander and Botstein developed interval mapping, which overcomes the three disadvantages of analysis of variance at marker loci.[20] Interval mapping is currently the most popular approach for QTL mapping in experimental crosses. The method makes use of a genetic map of the typed markers, and, like analysis of variance, assumes the presence of a single QTL. In interval mapping, each locus is considered one at a time and the logarithm of the odds ratio (LOD score) is calculated for the model that the given locus is a true QTL. The odds ratio is related to the Pearson correlation coefficient between the phenotype and the marker genotype for each individual in the experimental cross.[21]</p>
+<p>The term ‘interval mapping’ is used for estimating the position of a QTL within two markers (often indicated as ‘marker-bracket’). Interval mapping is originally based on the maximum likelihood but there are also very good approximations possible with simple regression.</p>
+<p>The principle for QTL mapping is: 1) The Likelihood can be calculated for a given set of parameters (particularly QTL effect and QTL position) given the observed data on phenotypes and marker genotypes. 2) The estimates for the parameters are those where the likelihood are highest. 3) A significance threshold can be established by permutation testing.[22]</p>
+<p>Conventional methods for the detection of quantitative trait loci (QTLs) are based on a comparison of single QTL models with a model assuming no QTL. For instance in the “interval mapping” method [23] the likelihood for a single putative QTL is assessed at each location on the genome. However, QTLs located elsewhere on the genome can have an interfering effect. As a consequence, the power of detection may be compromised, and the estimates of locations and effects of QTLs may be biased (Lander and Botstein 1989; Knapp 1991). Even nonexisting so-called “ghost” QTLs may appear (Haley and Knott 1992; Martinez and Curnow 1992). Therefore, multiple QTLs could be mapped more efficiently and more accurately by using multiple QTL models.[24] One popular approach to handle QTL mapping where multiple QTL contribute to a trait is to iteratively scan the genome and add known QTL to the regression model as QTLs are identified. This method, termed composite interval mapping determine both the location and effects size of QTL more accurately than single-QTL approaches, especially in small mapping populations where the effect of correlation between genotypes in the mapping population may be problematic.</p>
+<p>Composite interval mapping (CIM)</p>
+<p>In this method, one performs interval mapping using a subset of marker loci as covariates. These markers serve as proxies for other QTLs to increase the resolution of interval mapping, by accounting for linked QTLs and reducing the residual variation. The key problem with CIM concerns the choice of suitable marker loci to serve as covariates; once these have been chosen, CIM turns the model selection problem into a single-dimensional scan. The choice of marker covariates has not been solved, however. Not surprisingly, the appropriate markers are those closest to the true QTLs, and so if one could find these, the QTL mapping problem would be complete anyway.</p>
+<p>Family-pedigree based mapping</p>
+<p>Family based QTL mapping, or Family-pedigree based mapping (Linkage and association mapping), involves multiple families instead of a single family. Family based QTL mapping has been the only way for mapping of genes where experimental crosses are difficult to make. However, due to some advantages, now plant geneticists are attempting to incorporate some of the methods pioneered in human genetics.[25] Using family-pedigree based approach has been discussed (Bink et al. 2008). Family-based linkage and association has been successfully implemented (Rosyara et al. 2009)[26]</p>
+</div>
+<div id="expression-quantitative-trait-loci" class="section level2">
+<h2><span class="header-section-number">17.3</span> Expression quantitative trait loci</h2>
+<p>Expression quantitative trait loci (eQTLs) are genomic loci that explain all or a fraction of variation in expression levels of mRNAs.</p>
+<p>Distant and local, trans- and cis-eQTLs, respectively
+An expression trait is a trait regarding the amount of an mRNA transcript or a protein, which are usually the product of a single gene with a specific chromosomal location. This distinguishes the expression from most classical complex traits, which are not the product of the expression of a single gene. As mentioned, chromosomal loci that explain (part of the) variance in expression traits are called eQTLs. eQTLs that map to the approximate location of their gene-of-origin are referred to as local eQTLs. In contrast, those that map far from the location of their gene of origin, often on different chromosomes, are referred to as distant eQTLs. Often, these two types of eQTLs are referred to as cis and trans, respectively, but these terms are best reserved for instances when the regulatory mechanism (cis vs. trans) of the underlying sequence has been established. The first genome-wide study of gene expression was carried out in yeast and published in 2002.[3] The initial wave of eQTL studies employed microarrays to measure genome-wide gene expression; more recent studies have employed massively parallel RNA sequencing. Many expression QTL studies were performed in plants and animals, including humans[4], non-human primates[5][6] and mice[7].</p>
+<p>Some cis eQTLs are detected in many tissue types but the majority of trans eQTLs are tissue-dependent (dynamic).[8] eQTLs may act in cis (locally) or trans (at a distance) to a gene.[9] The abundance of a gene transcript is directly modified by polymorphism in regulatory elements. Consequently, transcript abundance might be considered as a quantitative trait that can be mapped with considerable power. These have been named expression QTLs (eQTLs).[10] The combination of whole-genome genetic association studies and the measurement of global gene expression allows the systematic identification of eQTLs. By assaying gene expression and genetic variation simultaneously on a genome-wide basis in a large number of individuals, statistical genetic methods can be used to map the genetic factors that underpin individual differences in quantitative levels of expression of many thousands of transcripts.[11] Studies have shown that single nucleotide polymorphisms (SNPs) reproducibly associated with complex disorders [12] as well as certain pharmacologic phenotypes [13] are found to be significantly enriched for eQTLs, relative to frequency-matched control SNPs.</p>
+<p>Detecting eQTLs</p>
+<p>Mapping eQTLs is done using standard QTL mapping methods that test the linkage between variation in expression and genetic polymorphisms. The only considerable difference is that eQTL studies can involve a million or more expression microtraits. Standard gene mapping software packages can be used, although it is often faster to use custom code such as QTL Reaper or the web-based eQTL mapping system GeneNetwork. GeneNetwork hosts many large eQTL mapping data sets and provide access to fast algorithms to map single loci and epistatic interactions. As is true in all QTL mapping studies, the final steps in defining DNA variants that cause variation in traits are usually difficult and require a second round of experimentation. This is especially the case for trans eQTLs that do not benefit from the strong prior probability that relevant variants are in the immediate vicinity of the parent gene. Statistical, graphical, and bioinformatic methods are used to evaluate positional candidate genes and entire systems of interactions.</p>
+</div>
+<div id="gwas" class="section level2">
+<h2><span class="header-section-number">17.4</span> GWAS</h2>
+<p>A genome-wide association study (GWAS) is a method similar to QTL mapping used to identify variants associated with complex traits. Association mapping differs from QTL mapping primarily in that GWASs are only performed with random-mating populations; because all the alleles in the population are tested at the same time, multiple alleles at each locus can be compared.</p>
+<p>The genetic architecture of complex traits</p>
+<p>Recently, with rapid increases in available genetic data, researchers have begun to better characterize the genetic architecture of complex traits. One surprise has been the observation that most loci identified in GWASs are found in noncoding regions of the genome; therefore, instead of directly altering protein sequences, such variants likely affect gene regulation. To understand the precise effects of these variants, QTL mapping has been employed to examine data from each step of gene regulation; for example, mapping RNA-sequencing data can help determine the effects of variants on mRNA expression levels, which then presumably affect the numbers of proteins translated. A comprehensive analysis of QTLs involved in various regulatory steps—promotor activity, transcription rates, mRNA expression levels, translation levels, and protein expression levels—showed that high proportions of QTLs are shared, indicating that regulation behaves as a “sequential ordered cascade” with variants affecting all levels of regulation. Many of these variants act by affecting transcription factor binding and other processes that alter chromatin function—steps which occur before and during RNA transcription.</p>
+<p>To determine the functional consequences of these variants, researchers have largely focused on identifying key genes, pathways, and processes that drive complex trait behavior; an inherent assumption has been that the most statistically significant variants have the greatest impact on traits because they act by affecting these key drivers. For example, one study hypothesizes that there exist rate-limiting genes pivotal to the function of gene regulatory networks. Others studies have identified the functional impacts of key genes and mutations on disorders, including autism and Schizophrenia. However, a 2017 analysis by Boyle et al. argues that while genes which directly impact complex traits do exist, regulatory networks are so interconnected that any expressed gene affects the functions of these “core” genes; this idea is coined the “omnigenic” hypothesis. While these “peripheral” genes each have small effects, their combined impact far exceeds the contributions of core genes themselves. To support the hypothesis that core genes play a smaller than expected role, the authors describe three main observations: the heritability for complex traits is spread broadly, often uniformly, across the genome; genetic effects do not appear to be mediated by cell-type specific function; and genes in the relevant functional categories only modestly contribute more to heritability than other genes. One alternative to the omnigenic hypothesis is the idea that peripheral genes act not by altering core genes but by altering cellular states, such as the speed of cell division or hormone response.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="regulation-of-gene-expression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="genetic-control-of-development.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/nikolaussucher/genetics/edit/master/complex_traits.rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
