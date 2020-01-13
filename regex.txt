@@ -1,0 +1,8 @@
+Search for First Last and replace by [First Last]()
+%s/[A-Z][a-z]\+\ [A-Z][a-z]\+/[\0]\(\)/gc
+
+Delete citations [12]
+%s/\[\d\+\]//g
+Delete [edit]
+%s/\[edit\]//g
+
