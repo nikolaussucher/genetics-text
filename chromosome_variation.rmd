@@ -1,21 +1,3 @@
-```{r include=FALSE, cache=FALSE}
-set.seed(1014)
-options(digits = 3)
-
-knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  cache = TRUE,
-  out.width = "70%",
-  fig.align = 'center',
-  fig.width = 6,
-  fig.asp = 0.618,  # 1 / phi
-  fig.show = "hold"
-)
-
-options(dplyr.print_min = 6, dplyr.print_max = 6)
-options(knitr.graphics.auto_pdf = TRUE)
-```
 # Chromosomal Disorders
 
 A [chromosomal disorder](https://en.wikipedia.org/wiki/Chromosome_abnormality), anomaly, aberration, or mutation is a missing, extra, or irregular portion of chromosomal DNA. It can be from a typical number of chromosomes or a structural abnormality in one or more chromosomes. 
@@ -37,7 +19,7 @@ setwd("~/Dropbox/R/genetics-textbook-master")
 
 terminology <-  as.tibble(read.csv("data/heteroploidy.csv"))
 
-knitr::kable(terminology, digits = 2, col.names = c("Number of chromosomes","Name","Description"), longtable = TRUE, booktabs = TRUE,caption = "Terminology and examples of heteroploidy in humans.") %>% kable_styling(latex_options = c("striped", "scale_down", "hold_position")) %>% column_spec(1, width = "5em") %>% column_spec(2, width = "5em") %>% column_spec(3, width = "10em")
+knitr::kable(terminology, digits = 2, col.names = c("Number of chromosomes","Name","Description"), longtable = TRUE, booktabs = TRUE,caption = "Terminology and examples of heteroploidy in humans.") %>% kable_styling(latex_options = c("striped", "scale_down", "hold_position")) %>% column_spec(1, width = "7em") %>% column_spec(2, width = "10em") %>% column_spec(3, width = "20em")
 ```
 
 An example of trisomy in humans is [Down syndrome](https://en.wikipedia.org/wiki/Down_syndrome), which is a developmental disorder caused by an extra copy of chromosome 21; the disorder is therefore also called trisomy 21. Having an extra copy of this chromosome means that individuals have three copies of each of its genes instead of two, making it difficult for cells to properly control how much protein is made. Producing too much or too little protein can have serious consequences. Genes on chromosome 21 that specifically contribute to the various symptoms of Down syndrome are now being identified. The frequency of Trisomy 21 has been determined to be a function of advanced maternal age.

@@ -81,7 +81,7 @@ The F1 offspring of Mendel's pea crosses always looked like one of the two paren
 knitr::include_graphics("./figures/mendel/Dominant-recessive_inheritance_P_-_F1_-_F2.png")
 ```
 
-But for some characteristics, the F1 hybrids have an appearance in between the phenotypes of the two parental varieties. A cross between two four o'clock (*Mirabilis jalapa*) plants shows an exception to Mendel's principle, called incomplete dominance. Flowers of heterozygous plants have less pigment than the homozygous, therefore there is a third phenotype. The phenotype lies somewhere between the two homozygous genotype. In cases of intermediate inheritance (incomplete dominance) in the F1-generation Mendel's principle of uniformity in genotype and phenotype applies as well. Research about intermediate inheritance was done by other scientists. The first was Carl Correns with his studies about *Mirabilis jalapa.
+But for some characteristics, the F1 hybrids have an appearance in between the phenotypes of the two parental varieties. A cross between two four o'clock (*Mirabilis jalapa*) plants shows an exception to Mendel's principle, called incomplete dominance. Flowers of heterozygous plants have less pigment than the homozygous, therefore there is a third phenotype. The phenotype lies somewhere between the two homozygous genotype. In cases of intermediate inheritance (incomplete dominance) in the F1-generation Mendel's principle of uniformity in genotype and phenotype applies as well. Research about intermediate inheritance was done by other scientists. The first was Carl Correns with his studies about *Mirabilis jalapa*.
 
 (ref:inter) [In *Mirabilis jalapa* and *Antirrhinum majus* are examples for intermediate inheritance. As seen in the F1-generation, heterozygous plants have "light pink" flowers—a mix of "red" and "white". The F2-generation shows a 1:2:1 ratio of red : light pink : white](https://commons.wikimedia.org/wiki/File:Intermediate_inheritance_P_-_F1_-_F2.png)
 
@@ -170,7 +170,7 @@ The rules of meiosis, as they apply to the dihybrid, are codified in Mendel's fi
 
 The forked-line method (also known as the tree method and the branching system) can also solve dihybrid and multihybrid crosses. A problem is converted to a series of monohybrid crosses, and the results are combined in a tree. However, a tree produces the same result as a Punnett square in less time and with more clarity. The example below (Figure \@ref(fig:forkedline)) assesses another double-heterozygote cross using RrYy x RrYy. As stated above, the phenotypic ratio is expected to be 9:3:3:1 if crossing unlinked genes from two double-heterozygotes. The genotypic ratio was obtained in the diagram below, this diagram will have more branches than if only analyzing for phenotypic ratio.
 
-(ref:forked) [The major structures in DNA compaction: DNA, the nucleosome, the 10 nm "beads-on-a-string" fibre, the 30 nm fibre and the metaphase chromosome.](https://commons.wikimedia.org/wiki/File:Dihybrid_Cross_Tree_Method.png)
+(ref:forked) [The forked line method.](https://commons.wikimedia.org/wiki/File:Dihybrid_Cross_Tree_Method.png)
 
 ```{r forkedline, fig.cap='(ref:forked)', echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./figures/mendel/Dihybrid_Cross_Tree_Method.png")
