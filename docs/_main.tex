@@ -1,32 +1,224 @@
-\input{preamble}
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Text For SCI200 Genetics at Roxbury Community College},
+            pdfauthor={Assembled by Nikolaus Sucher},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Text For SCI200 Genetics at Roxbury Community College}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Assembled by Nikolaus Sucher}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{siunitx}
+\usepackage{framed}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+ \definecolor{shadecolor}{RGB}{248,248,248}
+\usepackage{grffile}
+\usepackage{graphicx}
+\usepackage{morefloats}
+\usepackage[bf,singlelinecheck=on]{caption}
+\usepackage{parskip}
+ \setlength{\parindent}{15pt}
+ % should be last package call in the preamble (?)
+ \usepackage{hyperref}
+  \urlstyle{same}
+
+%\renewcommand{\textfraction}{0.05}
+%\renewcommand{\topfraction}{0.8}
+%\renewcommand{\bottomfraction}{0.8}
+%\renewcommand{\floatpagefraction}{0.75}
+
+\renewenvironment{quote}{\begin{VF}}{\end{VF}}
+\let\oldhref\href
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+\ifxetex
+  \usepackage{letltxmacro}
+  \setlength{\XeTeXLinkMargin}{1pt}
+  \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    \IncludeGraphicsAux{#1}%
+  }%
+  \newcommand*{\IncludeGraphicsAux}[2]{%
+    \XeTeXLinkBox{%
+      \SavedIncludeGraphics#1{#2}%
+    }%
+  }%
+\fi
+
+\makeatletter
+\newenvironment{kframe}{%
+\medskip{}
+\setlength{\fboxsep}{.8em}
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\newenvironment{Shaded}{\begin{kframe}}{\end{kframe}}
+
+\newenvironment{rmdblock}[1]
+  {
+  \begin{itemize}
+  \renewcommand{\labelitemi}{
+    \raisebox{-.7\height}[0pt][0pt]{
+      {\setkeys{Gin}{width=3em,keepaspectratio}\includegraphics{images/#1}}
+    }
+  }
+  \setlength{\fboxsep}{1em}
+  \begin{kframe}
+  \item
+  }
+  {
+  \end{kframe}
+  \end{itemize}
+  }
+
+\newenvironment{rmdnote}
+  {\begin{rmdblock}{note}}
+  {\end{rmdblock}}
+
+\newenvironment{rmdcaution}
+  {\begin{rmdblock}{caution}}
+  {\end{rmdblock}}
+
+\newenvironment{rmdimportant}
+  {\begin{rmdblock}{important}}
+  {\end{rmdblock}}
+
+\newenvironment{rmdtip}
+  {\begin{rmdblock}{tip}}
+  {\end{rmdblock}}
+
+\newenvironment{rmdwarning}
+  {\begin{rmdblock}{warning}}
+  {\end{rmdblock}}
+
+%\usepackage{makeidx}
+% \makeindex
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
 
 \begin{document}
-
-
-\frontmatter
-
-%include the cover as title page and set the page counter to -1 in order to start with the title page as 1 (i)
-\setcounter{page}{-1}\includepdf[pages={1}]{genetics_text_cover.pdf}
-
-
 \maketitle
 
+{
 \setcounter{tocdepth}{1}
 \tableofcontents
-
-%insert empty page
-\clearpage
-
-\listoffigures
+}
 \listoftables
+\listoffigures
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+This is a Text for the Genetics course (SCI200) at RCC.
+
+\begin{center}\includegraphics[width=0.7\linewidth]{genetics_text_cover} \end{center}
+
+This work is licensed under the \href{https://creativecommons.org/licenses/by-sa/3.0/deed.en}{Creative Commons Attribution-Share Alike 3.0 Unported} United States License.
 
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 
 The creation of this text was greatly facilitated and owes a major debt to \href{https://www.wikipedia.org}{Wikipedia} and its large number of voluntary contributors. I very liberally copied from many Wikipedia pages and then remixed, edited, adapted and added text. With your continued support and help this book can only get better over time. I urge you to email me with your criticisms and suggestions at \href{mailto:nsucher@rcc.mass.edu}{\nolinkurl{nsucher@rcc.mass.edu}}. This book is made available as an open educational resource under \href{https://creativecommons.org/licenses/by-sa/3.0/deed.en}{Creative Commons Attribution-Share Alike 3.0 Unported} United States License for others to do as I did and improve and adapt to specific requirements. I am grateful for the support provided by the \href{http://libguides.rcc.mass.edu/OER/proposal}{Roxbury Community College's OER initiative} ``RCC Go Open'' and wish to thank the members of the OER Task Force and library director William Hoag for their unwavering commitment to OER.
-
-\mainmatter
 
 \hypertarget{genetics-the-science-of-genes-genetic-variation-and-heredity}{%
 \chapter{Genetics: The Science of Genes, Genetic Variation and Heredity}\label{genetics-the-science-of-genes-genetic-variation-and-heredity}}
@@ -254,7 +446,40 @@ By comparing the homology between different species' genomes, it is possible to 
 
 Although geneticists originally studied inheritance in a wide range of organisms, researchers began to specialize in studying the genetics of a particular subset of organisms. The fact that significant research already existed for a given organism would encourage new researchers to choose it for further study, and so eventually a few model organisms became the basis for most genetics research. Common research topics in model organism genetics include the study of gene regulation and the involvement of genes in development and cancer.
 
-Organisms were chosen, in part, for convenience---short generation times and easy genetic manipulation made some organisms popular genetics research tools. Widely used model organisms include the gut bacterium \emph{Escherichia coli}, the plant \emph{Arabidopsis thaliana}, baker's yeast (\emph{Saccharomyces cerevisiae}), the nematode *Caenorhabditis elegans**, the common fruit fly (\emph{Drosophila melanogaster}), and the common house mouse (\emph{Mus musculus}).
+Organisms were chosen, in part, for convenience---short generation times and easy genetic manipulation made some organisms popular genetics research tools. Widely used model organisms include the gut bacterium \emph{Escherichia coli}, the plant \emph{Arabidopsis thaliana} (Fig. \ref{fig:arabidopsisthaliana}), baker's yeast (\emph{Saccharomyces cerevisiae}), the roundworm \emph{Caenorhabditis elegans} (Fig. \ref{fig:celegans}), the common fruit fly \emph{Drosophila melanogaster} (Fig. \ref{fig:drosophilamelanogaster}), and the common house mouse (\emph{Mus musculus}).
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/genetics/Arabidopsis_thaliana} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Arabidopsis_thaliana.jpg}{The thale cress \emph{Arabidopsis thaliana}.}}\label{fig:arabidopsisthaliana}
+\end{figure}
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/genetics/Drosophila_melanogaster_-_side_(aka)} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Drosophila_melanogaster_-_side_(aka).jpg}{The fruit fly \emph{Drosophila melanogaster}.}}\label{fig:drosophilamelanogaster}
+\end{figure}
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/genetics/Adult_Caenorhabditis_elegans} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Adult_Caenorhabditis_elegans.jpg}{An adult \emph{Caenorhabditis elegans} worm.}}\label{fig:celegans}
+\end{figure}
 
 \hypertarget{medical-genetics}{%
 \section{Medical Genetics}\label{medical-genetics}}
@@ -3537,6 +3762,17 @@ PCR amplifies a specific region of a DNA strand (the DNA target). Most PCR metho
 
 Typically, PCR consists of a series of 20--40 repeated temperature changes, called thermal cycles, with each cycle commonly consisting of two or three discrete temperature steps (see figure below). The cycling is often preceded by a single temperature step at a very high temperature (\textgreater{}90 °C (194 °F)), and followed by one hold at the end for final product extension or brief storage. The temperatures used and the length of time they are applied in each cycle depend on a variety of parameters, including the enzyme used for DNA synthesis, the concentration of bivalent ions and dNTPs in the reaction, and the melting temperature (Tm) of the primers. The individual steps common to most PCR methods are as follows:
 
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/techniques/Polymerase_chain_reaction} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Polymerase_chain_reaction.svg}{A schematic representation of the steps of the polymerase chain reaction (PCR).}}\label{fig:pcrcartoon}
+\end{figure}
+
 \begin{itemize}
 \tightlist
 \item
@@ -3734,6 +3970,17 @@ Scientists associated with the initial development of recombinant DNA methods re
 
 Molecular cloning is a set of experimental methods in molecular biology that are used to assemble recombinant DNA molecules and to direct their replication within host organisms. The use of the word cloning refers to the fact that the method involves the replication of one molecule to produce a population of cells with identical DNA molecules. Molecular cloning generally uses DNA sequences from two different organisms: the species that is the source of the DNA to be cloned, and the species that will serve as the living host for replication of the recombinant DNA. Molecular cloning methods are central to many contemporary areas of modern biology and medicine.
 
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/techniques/Gene_cloning} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Gene_cloning.svg}{Diagram of molecular cloning using bacteria and plasmids.}}\label{fig:cloningdiagram}
+\end{figure}
+
 In a conventional molecular cloning experiment, the DNA to be cloned is obtained from an organism of interest, then treated with enzymes in the test tube to generate smaller DNA fragments. Subsequently, these fragments are then combined with vector DNA to generate recombinant DNA molecules. The recombinant DNA is then introduced into a host organism (typically an easy-to-grow, benign, laboratory strain of \emph{E. coli} bacteria). This will generate a population of organisms in which recombinant DNA molecules are replicated along with the host DNA. Because they contain foreign DNA fragments, these are transgenic or genetically modified microorganisms (GMO). This process takes advantage of the fact that a single bacterial cell can be induced to take up and replicate a single recombinant DNA molecule. This single cell can then be expanded exponentially to generate a large amount of bacteria, each of which contain copies of the original recombinant molecule. Thus, both the resulting bacterial population, and the recombinant DNA molecule, are commonly referred to as ``clones''. Strictly speaking, recombinant DNA refers to DNA molecules, while molecular cloning refers to the experimental methods used to assemble them. The idea arose that different DNA sequences could be inserted into a plasmid and that these foreign sequences would be carried into bacteria and digested as part of the plasmid. That is, these plasmids could serve as cloning vectors to carry genes.
 
 Virtually any DNA sequence can be cloned and amplified, but there are some factors that might limit the success of the process. Examples of the DNA sequences that are difficult to clone are inverted repeats, origins of replication, centromeres and telomeres. Another characteristic that limits chances of success is large size of DNA sequence. Inserts larger than 10kbp have very limited success, but bacteriophages such as bacteriophage λ can be modified to successfully insert a sequence up to 40 kbp.
@@ -3873,6 +4120,17 @@ Two types of small ribonucleic acid (RNA) molecules -- microRNA (miRNA) and smal
 
 The RNAi pathway is found in many eukaryotes, including animals, and is initiated by the enzyme Dicer, which cleaves long double-stranded RNA (dsRNA) molecules into short double-stranded fragments of \textasciitilde{}21 nucleotide siRNAs. Each siRNA is unwound into two single-stranded RNAs (ssRNAs), the passenger strand and the guide strand. The passenger strand is degraded and the guide strand is incorporated into the RNA-induced silencing complex (RISC). The most well-studied outcome is post-transcriptional gene silencing, which occurs when the guide strand pairs with a complementary sequence in a messenger RNA molecule and induces cleavage by Argonaute 2 (Ago2), the catalytic component of the RISC. In some organisms, this process spreads systemically, despite the initially limited molar concentrations of siRNA.
 
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/techniques/ShRNA_Lentivirus} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:ShRNA_Lentivirus.svg}{Lentiviral delivery of designed shRNAs and the mechanism of RNA interference in mammalian cells.}}\label{fig:sirnacartoon}
+\end{figure}
+
 RNAi is a valuable research tool, both in cell culture and in living organisms, because synthetic dsRNA introduced into cells can selectively and robustly induce suppression of specific genes of interest. RNAi may be used for large-scale screens that systematically shut down each gene in the cell, which can help to identify the components necessary for a particular cellular process or an event such as cell division. The pathway is also used as a practical tool in biotechnology, medicine and insecticides.
 
 RNAi is an RNA-dependent gene silencing process that is controlled by the RNA-induced silencing complex (RISC) and is initiated by short double-stranded RNA molecules in a cell's cytoplasm, where they interact with the catalytic RISC component argonaute. When the dsRNA is exogenous (coming from infection by a virus with an RNA genome or laboratory manipulations), the RNA is imported directly into the cytoplasm and cleaved to short fragments by Dicer. The initiating dsRNA can also be endogenous (originating in the cell), as in pre-microRNAs expressed from RNA-coding genes in the genome. The primary transcripts from such genes are first processed to form the characteristic stem-loop structure of pre-miRNA in the nucleus, then exported to the cytoplasm. Thus, the two dsRNA pathways, exogenous and endogenous, converge at the RISC.
@@ -3963,6 +4221,17 @@ The P1 phage DNA when released into the host from the virion is in the form of a
 \section{CRISPR gene editing}\label{crispr-gene-editing}}
 
 CRISPR gene editing is a method by which the genomes of living organisms may be edited. It is based on a simplified version of the bacterial CRISPR/Cas (CRISPR-Cas9) antiviral defense system. By delivering the Cas9 nuclease complexed with a synthetic guide RNA (gRNA) into a cell, the cell's genome can be cut at a desired location, allowing existing genes to be removed and/or new ones added.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{./figures/techniques/Crispr} 
+
+}
+
+\caption{\href{https://commons.wikimedia.org/wiki/File:Crispr.png}{Diagram of the CRISPR prokaryotic antiviral defense mechanism.}}\label{fig:crisprdiagram}
+\end{figure}
 
 While genomic editing in eukaryotic cells has been possible using various methods since the 1980s, the methods employed had proved to be inefficient and impractical to implement on a larger scale. Genomic editing leads to irreversible changes to the gene. Working like genetic scissors, the Cas9 nuclease opens both strands of the targeted sequence of DNA to introduce the modification by one of two methods. Knock-in mutations, facilitated via Homology Directed Repair (HDR), is the traditional pathway of targeted genomic editing approaches. This allows for the introduction of targeted DNA damage and repair. HDR employs the use of similar DNA sequences to drive the repair of the break via the incorporation of exogenous DNA to function as the repair template. This method relies on the periodic and isolated occurrence of DNA damage at the target site in order for a repair to commence. Knock-out mutations caused by CRISPR-Cas9 results in the repair of the double-strand break by means of NHEJ (Non-Homologous End Joining). NHEJ can often result in random deletions or insertions at the repair site disrupting or altering gene functionality. Therefore, genomic engineering by CRISPR-Cas9 allows researchers the ability to generate targeted random gene disruption.
 
