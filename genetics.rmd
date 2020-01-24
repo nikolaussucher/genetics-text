@@ -177,7 +177,25 @@ By comparing the homology between different species' genomes, it is possible to 
 
 Although geneticists originally studied inheritance in a wide range of organisms, researchers began to specialize in studying the genetics of a particular subset of organisms. The fact that significant research already existed for a given organism would encourage new researchers to choose it for further study, and so eventually a few model organisms became the basis for most genetics research. Common research topics in model organism genetics include the study of gene regulation and the involvement of genes in development and cancer.
 
-Organisms were chosen, in part, for convenience—short generation times and easy genetic manipulation made some organisms popular genetics research tools. Widely used model organisms include the gut bacterium *Escherichia coli*, the plant *Arabidopsis thaliana*, baker's yeast (*Saccharomyces cerevisiae*), the nematode  *Caenorhabditis elegans**, the common fruit fly (*Drosophila melanogaster*), and the common house mouse (*Mus musculus*).
+Organisms were chosen, in part, for convenience—short generation times and easy genetic manipulation made some organisms popular genetics research tools. Widely used model organisms include the gut bacterium *Escherichia coli*, the plant *Arabidopsis thaliana* (Fig. \@ref(fig:arabidopsisthaliana)), baker's yeast (*Saccharomyces cerevisiae*), the roundworm *Caenorhabditis elegans* (Fig. \@ref(fig:celegans)), the common fruit fly *Drosophila melanogaster* (Fig. \@ref(fig:drosophilamelanogaster)), and the common house mouse (*Mus musculus*).
+
+(arabidopsis) [The thale cress *Arabidopsis thaliana*.](https://commons.wikimedia.org/wiki/File:Arabidopsis_thaliana.jpg)
+
+```{r arabidopsisthaliana, fig.cap='(ref:arabidopsis)', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./figures/genetics/Arabidopsis_thaliana.jpg")
+```
+
+(drosophila) [The fruit fly *Drosophila melanogaster*.](https://commons.wikimedia.org/wiki/File:Drosophila_melanogaster_-_side_(aka).jpg)
+
+```{r drosophilamelanogaster, fig.cap='(ref:drosophila)', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./figures/genetics/Drosophila_melanogaster_-_side_(aka).jpg")
+```
+
+(elegans) [An adult *Caenorhabditis elegans* worm.](https://commons.wikimedia.org/wiki/File:Adult_Caenorhabditis_elegans.jpg)
+
+```{r celegans, fig.cap='(ref:elegans)', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./figures/genetics/Adult_Caenorhabditis_elegans.jpg")
+```
 
 ## Medical Genetics
 

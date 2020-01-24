@@ -1,6 +1,6 @@
 ---
 knit: "bookdown::render_book"
-title: "Text    For SCI200 Genetics at Roxbury Community College"
+title: "Text For SCI200 Genetics at Roxbury Community College"
 author: ["Assembled by Nikolaus Sucher"]
 description: "This is a free online Text for Genetics."
 #url: 'https://myrcc.rcc.mass.edu/ICS/200_lab_manual/index.html'
@@ -13,7 +13,10 @@ lof: yes
 lot: yes
 ---
 
-# {-}
+# Welcome {-}
+
+This is a Text for the Genetics course (SCI200) at RCC.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("genetics_text_cover.jpg")
