@@ -19,8 +19,8 @@ else {
       input=$prefix.pdf
       output=$prefix-low_res.pdf
       gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dCompatibilityLevel=1.4 -dOverrideICC -dColorConversionStrategy=/sRGB -dProcessColorModel=/DeviceRGB -dDetectDuplicateImages=true -dPDFSETTINGS=/ebook -sOutputFile=$output $input
-      cp $output ../docs/genetics_text.pdf
-      echo "Low-res-PDF generated and copied to the docs directory as genetics_text.pdf!"
+      cp $output ../docs/_main.pdf
+      echo "Low-res-PDF generated and copied to the docs directory as _main.pdf!"
     fi
   }
 fi
