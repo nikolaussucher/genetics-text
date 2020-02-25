@@ -63,7 +63,7 @@ Germline aneuploidy is typically detected through karyotyping, a process in whic
 
 These tests can also be performed prenatally to detect aneuploidy in a pregnancy, through either amniocentesis or chorionic villus sampling Pregnant women of 35 years or older are offered prenatal testing because the chance of chromosomal aneuploidy increases as the mother's age increases.
 
-Recent advances have allowed for less invasive testing methods based on the presence of fetal genetic material in maternal blood. See Triple test.
+Recent advances have allowed for less invasive testing methods based on the presence of fetal genetic material in maternal blood.
 
 ## Structural abnormalities
 
@@ -78,11 +78,12 @@ When the chromosome's structure is altered, this can take several forms:
 * Insertions: A portion of one chromosome has been deleted from its normal place and inserted into another chromosome.
 * Rings: A portion of a chromosome has broken off and formed a circle or ring. This can happen with or without loss of genetic material.
 * Isochromosome: Formed by the mirror image copy of a chromosome segment including the centromere.
+
 Chromosome instability syndromes are a group of disorders characterized by chromosomal instability and breakage. They often lead to an increased tendency to develop certain types of malignancies.
 
-Most chromosome abnormalities occur as an accident in the egg cell or sperm, and therefore the anomaly is present in every cell of the body. Some anomalies, however, can happen after conception, resulting in Mosaicism (where some cells have the anomaly and some do not). Chromosome anomalies can be inherited from a parent or be "de novo". This is why chromosome studies are often performed on parents when a child is found to have an anomaly. If the parents do not possess the abnormality it was not initially inherited; however it may be transmitted to subsequent generations.
+Most chromosome abnormalities occur as an accident in the egg cell or sperm, and therefore the anomaly is present in every cell of the body. Some anomalies, however, can happen after conception, resulting in mosaicism (where some cells have the anomaly and some do not). Chromosome anomalies can be inherited from a parent or be "de novo". This is why chromosome studies are often performed on parents when a child is found to have an anomaly. If the parents do not possess the abnormality it was not initially inherited; however it may be transmitted to subsequent generations.
 
 ## Acquired chromosomal abnormalities
 
-Most cancers, if not all, could cause chromosome abnormalities, with either the formation of hybrid genes and fusion proteins, deregulation of genes and overexpression of proteins, or loss of tumor suppressor genes (see the "Mitelman Database"  and the Atlas of Genetics and Cytogenetics in Oncology and Haematology,). Furthermore, certain consistent chromosomal abnormalities can turn normal cells into a leukemic cell such as the translocation of a gene, resulting in its inappropriate expression.
+Most cancers, if not all, involve chromosome abnormalities, with either the formation of hybrid genes and fusion proteins, deregulation of genes and overexpression of proteins, or loss of tumor suppressor genes.
 
