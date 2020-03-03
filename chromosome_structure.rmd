@@ -2,7 +2,7 @@
 
 Eukaryotic chromosome structure refers to the levels of packaging from the raw DNA molecules to the chromosomal structures seen during metaphase in mitosis or meiosis. Chromosomes contain long strands of DNA containing genetic information. Compared to prokaryotic chromosomes, eukaryotic chromosomes are much larger in size and are linear chromosomes. Eukaryotic chromosomes are also stored in the nucleus of the cell, while chromosomes of prokaryotic cells are not stored in a nucleus.
 
-Some of the first sientists to recognize the structures now known as chromosomes were [Matthias Jakob Schleiden](https://en.wikipedia.org/wiki/Matthias_Jakob_Schleiden), [Rudolf Virchow](https://en.wikipedia.org/wiki/Rudolf_Virchow), and [Otto Bütschli](https://en.wikipedia.org/wiki/Otto_B%C3%BCtschli). The term was coined by Heinrich Wilhelm Gottfried von Waldeyer-Hartz, referring to the term chromatin, was introduced by [Walther Flemming](https://en.wikipedia.org/wiki/Walther_Flemming).
+Some of the first sientists to recognize the structures now known as chromosomes were [Matthias Jakob Schleiden](https://en.wikipedia.org/wiki/Matthias_Jakob_Schleiden), [Rudolf Virchow](https://en.wikipedia.org/wiki/Rudolf_Virchow), and [Otto Bütschli](https://en.wikipedia.org/wiki/Otto_B%C3%BCtschli). The term was coined by Heinrich Wilhelm Gottfried von Waldeyer-Hartz, referring to the term chromatin, that was introduced by [Walther Flemming](https://en.wikipedia.org/wiki/Walther_Flemming).
 
 In humans, roughly 3.2 billion nucleotides are spread out over 23 different chromosomes. Each chromosome consists of long linear DNA molecule associated with proteins that fold and pack the fine thread of DNA into a more compact structure.
 
@@ -10,7 +10,7 @@ In humans, roughly 3.2 billion nucleotides are spread out over 23 different chro
 
 A [nucleosome](https://en.wikipedia.org/wiki/Nucleosome) is the basic structural unit of DNA packaging in eukaryotes. The structure of a nucleosome consists of a segment of DNA wound around eight histone proteins and resembles thread wrapped around a spool (Figure \@ref(fig:nucleosome)).
 
-(ref:nucleo) [X-Ray crystal structure of the nucleosome core particle consisting of H2A (lightblue), H2B (wheat), H3 (salmon) and H4 (palegreen) core histones, and DNA.tructure of the nucleosome core particle, NCP147, at 1.9 A resolution.](https://www.rcsb.org/structure/1KX5) Top: view is from the top through the superhelical axis. Bottom: side view.
+(ref:nucleo) [X-Ray crystal structure of the nucleosome core particle consisting of H2A (lightblue), H2B (wheat), H3 (salmon) and H4 (palegreen) core histones, and DNA. Structure of the nucleosome core particle, NCP147, at 1.9 A resolution.](https://www.rcsb.org/structure/1KX5) Top: view is from the top through the superhelical axis. Bottom: side view.
 
 ```{r nucleosome, fig.cap='(ref:nucleo)', echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics(c("./figures/dna/nucleosome_top.png", "./figures/dna/nucleosome_side.png"))
@@ -18,9 +18,9 @@ knitr::include_graphics(c("./figures/dna/nucleosome_top.png", "./figures/dna/nuc
 
 DNA must be compacted into nucleosomes to fit within the cell nucleus. In addition to nucleosome wrapping, eukaryotic chromatin is further compacted by being folded into a series of more complex structures, eventually forming a chromosome.
 
-(ref:struc) [The major structures in DNA compaction: DNA, the nucleosome, the 10 nm "beads-on-a-string" fibre, the 30 nm fibre and the metaphase chromosome.](https://commons.wikimedia.org/wiki/File:Chromatin_Structures.png)
+(ref:dnacomp) [The major structures in DNA compaction: DNA, the nucleosome, the 10 nm "beads-on-a-string" fibre, the 30 nm fibre and the metaphase chromosome.](https://commons.wikimedia.org/wiki/File:Chromatin_Structures.png)
 
-```{r structure, fig.cap='(ref:struc)', echo=FALSE, message=FALSE, warning=FALSE}
+```{r dnacompaction, fig.cap='(ref:dnacomp)', echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./figures/chromosomes/Chromatin_Structures.png")
 ```
 
@@ -42,7 +42,7 @@ A crystal structure of a tetranucleosome has been presented and used to build up
 
 Although the nucleosome is a very stable protein-DNA complex, it is not static and has been shown to undergo a number of different structural re-arrangements including nucleosome sliding and DNA site exposure. Depending on the context, nucleosomes can inhibit or facilitate transcription factor binding. Nucleosome positions are controlled by three major contributions: First, the intrinsic binding affinity of the histone octamer depends on the DNA sequence. Second, the nucleosome can be displaced or recruited by the competitive or cooperative binding of other protein factors. Third, the nucleosome may be actively translocated by ATP-dependent remodeling complexes.
 
-Promoters of active genes have nucleosome free regions (NFR). This allows for promoter DNA accessibility to various proteins, such as transcription factors. Nucleosome free region typically spans for 200 nucleotides in S. cerevisae Well-positioned nucleosomes form boundaries of NFR. These nucleosomes are called +1-nucleosome and −1-nucleosome and are located at canonical distances downstream and upstream, respectively, from transcription start site. +1-nucleosome and several downstream nucleosomes also tend to incorporate H2A.Z histone variant.
+Promoters of active genes have nucleosome free regions (NFR). This allows for promoter DNA accessibility to various proteins, such as transcription factors. Nucleosome free region typically spans for 200 nucleotides in *S. cerevisae* Well-positioned nucleosomes form boundaries of NFR. These nucleosomes are called +1-nucleosome and −1-nucleosome and are located at canonical distances downstream and upstream, respectively, from transcription start site. +1-nucleosome and several downstream nucleosomes also tend to incorporate H2A.Z histone variant.
 
 ## Modulating nucleosome structure
 
@@ -89,7 +89,7 @@ The addition of one, two, or many methyl groups to lysine has little effect on t
 
 ### Arginine methylation
 
-Enzymes called peptidylarginine deiminases (PADs) hydrolyze the imine group of arginines and attach a keto group, so that there is one less positive charge on the amino acid residue. This process has been involved in the activation of gene expression by making the modified histones less tightly bound to DNA and thus making the chromatin more accessible. PADs can also produce the opposite effect by removing or inhibiting mono-methylation of arginine residues on histones and thus antagonizing the positive effect arginine methylation has on transcriptional activity.
+What was said above of the chemistry of lysine methylation also applies to arginine methylation, and some protein domains—e.g., Tudor domains—can be specific for methyl arginine instead of methyl lysine. Arginine is known to be mono- or di-methylated, and methylation can be symmetric or asymmetric, potentially with different meanings.
 
 ### Lysine acetylation
 

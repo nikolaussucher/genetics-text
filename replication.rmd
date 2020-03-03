@@ -14,6 +14,25 @@ In a cell, DNA replication begins at specific locations, or origins of replicati
 
 DNA replication (DNA amplification) can also be performed in vitro (artificially, outside a cell). DNA polymerases isolated from cells and artificial DNA primers can be used to start DNA synthesis at known sequences in a template DNA molecule. Polymerase chain reaction (PCR), ligase chain reaction (LCR), and transcription-mediated amplification (TMA) are examples.
 
+The [replisome](https://en.wikipedia.org/wiki/Replisome) is a complex molecular machine that carries out replication of DNA. The replisome first unwinds double stranded DNA into two single strands. For each of the resulting single strands, a new complementary sequence of DNA is synthesized. The net result is formation of two new double stranded DNA sequences that are exact copies of the original double stranded DNA sequence.[1]
+
+In terms of structure, the replisome is composed of two replicative polymerase complexes, one of which synthesizes the leading strand, while the other synthesizes the lagging strand. The replisome is composed of a number of proteins including helicase, RFC, PCNA, gyrase/topoisomerase, SSB/RPA, primase, DNA polymerase III, RNAse H, and ligase.
+
+For prokaryotes, each dividing nucleoid (region containing genetic material which is not a nucleus) requires two replisomes for bidirectional replication. The two replisomes continue replication at both forks in the middle of the cell. Finally, as the termination site replicates, the two replisomes separate from the DNA. The replisome remains at a fixed, midcell location in the cell, attached to the membrane, and the template DNA threads through it. DNA is fed through the stationary pair of replisomes located at the cell membrane.
+
+For eukaryotes, numerous replication bubbles form at origins of replication throughout the chromosome. As with prokaryotes, two replisomes are required, one at each replication fork located at the terminus of the replication bubble. Because of significant differences in chromosome size, and the associated complexities of highly condensed chromosomes, various aspects of the DNA replication process in eukaryotes, including the terminal phases, are less well-characterised than for prokaryotes.
+
+The replisome is responsible for copying the entirety of genomic DNA in each proliferative cell. This process allows for the high-fidelity passage of hereditary/genetic information from parental cell to daughter cell and is thus essential to all organisms. Much of the cell cycle is built around ensuring that DNA replication occurs without errors.
+
+(ref:dnarep) [Many enzymes are involved in forming the DNA replication fork and DNA polymerization.](https://commons.wikimedia.org/wiki/File:Eukaryotic_DNA_replication.svg)
+
+```{r repforkform, fig.cap='(ref:dnarep)', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./figures/replication/Eukaryotic_DNA_replication.svg")
+```
+
+In G1 phase of the cell cycle, many of the DNA replication regulatory processes are initiated. In eukaryotes, the vast majority of DNA synthesis occurs during S phase of the cell cycle, and the entire genome must be unwound and duplicated to form two daughter copies. During G2, any damaged DNA or replication errors are corrected. Finally, one copy of the genomes is segregated to each daughter cell at mitosis or M phase. These daughter copies each contain one strand from the parental duplex DNA and one nascent antiparallel strand.
+
+
 ## Eukaryotic DNA replication
 
 Eukaryotic DNA replication is a conserved mechanism that restricts DNA replication to once per cell cycle. Eukaryotic DNA replication of chromosomal DNA is central for the duplication of a cell and is necessary for the maintenance of the eukaryotic genome.
@@ -35,16 +54,6 @@ However, Pol α is not able to continue DNA replication and must be replaced wit
 * Polymerase α (Pol α): Forms a complex with a small catalytic subunit (PriS) and a large noncatalytic (PriL) subunit. First, synthesis of an RNA primer allows DNA synthesis by DNA polymerase alpha. Occurs once at the origin on the leading strand and at the start of each Okazaki fragment on the lagging strand. Pri subunits act as a primase, synthesizing an RNA primer. DNA Pol α elongates the newly formed primer with DNA nucleotides. After around 20 nucleotides, elongation is taken over by Pol ε on the leading strand and Pol δ on the lagging strand.
 * Polymerase δ (Pol δ): Highly processive and has proofreading, 3'->5' exonuclease activity. In vivo, it is the main polymerase involved in both lagging strand and leading strand synthesis.
 * Polymerase ε (Pol ε): Highly processive and has proofreading, 3'->5' exonuclease activity. Highly related to pol δ, in vivo it functions mainly in error checking of pol δ.
-
-The replisome is responsible for copying the entirety of genomic DNA in each proliferative cell. This process allows for the high-fidelity passage of hereditary/genetic information from parental cell to daughter cell and is thus essential to all organisms. Much of the cell cycle is built around ensuring that DNA replication occurs without errors.
-
-(ref:dnarep) [Many enzymes are involved in forming the DNA replication fork and DNA polymerization.](https://commons.wikimedia.org/wiki/File:Eukaryotic_DNA_replication.svg)
-
-```{r repforkform, fig.cap='(ref:dnarep)', echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("./figures/replication/Eukaryotic_DNA_replication.svg")
-```
-
-In G1 phase of the cell cycle, many of the DNA replication regulatory processes are initiated. In eukaryotes, the vast majority of DNA synthesis occurs during S phase of the cell cycle, and the entire genome must be unwound and duplicated to form two daughter copies. During G2, any damaged DNA or replication errors are corrected. Finally, one copy of the genomes is segregated to each daughter cell at mitosis or M phase. These daughter copies each contain one strand from the parental duplex DNA and one nascent antiparallel strand.
 
 DNA replication, like all biological polymerization processes, proceeds in three enzymatically catalyzed and coordinated steps: initiation, elongation and termination.
 
@@ -75,7 +84,7 @@ The first is the best known of these mechanisms and is used by the cellular orga
 
 Multiple DNA polymerases take on different roles in the DNA replication process. In *E. coli*, DNA Pol III is the polymerase enzyme primarily responsible for DNA replication. It assembles into a replication complex at the replication fork that exhibits extremely high processivity, remaining intact for the entire replication cycle. In contrast, DNA Pol I is the enzyme responsible for replacing RNA primers with DNA. DNA Pol I has a 5′ to 3′ exonuclease activity in addition to its polymerase activity, and uses its exonuclease activity to degrade the RNA primers ahead of it as it extends the DNA strand behind it, in a process called nick translation. Pol I is much less processive than Pol III because its primary function in DNA replication is to create many short DNA regions rather than a few very long regions.
 
-In eukaryotes, the low-processivity enzyme, Pol α, helps to initiate replication because it forms a complex with primase. In eukaryotes, leading strand synthesis is thought to be conducted by Pol ε; however, this view has recently been challenged, suggesting a role for Pol δ. Primer removal is completed Pol δ while repair of DNA during replication is completed by Pol ε.
+In eukaryotes, the low-processivity enzyme, Pol α, helps to initiate replication because it forms a complex with primase. In eukaryotes, leading strand synthesis is thought to be conducted by Pol ε; however, this view has recently been challenged, suggesting a role for Pol δ. Primer removal is completed by Pol δ while repair of DNA during replication is completed by Pol ε.
 
 As DNA synthesis continues, the original DNA strands continue to unwind on each side of the bubble, forming a replication fork with two prongs. In bacteria, which have a single origin of replication on their circular chromosome, this process creates a "theta structure" (resembling the Greek letter theta: θ). In contrast, eukaryotes have longer linear chromosomes and initiate replication at multiple origins within these.
 
@@ -101,7 +110,7 @@ As helicase unwinds DNA at the replication fork, the DNA ahead is forced to rota
 
 Bare single-stranded DNA tends to fold back on itself forming secondary structures; these structures can interfere with the movement of DNA polymerase. To prevent this, single-strand binding proteins bind to the DNA until a second strand is synthesized, preventing secondary structure formation.
 
-Clamp proteins form a sliding clamp around DNA, helping the DNA polymerase maintain contact with its template, thereby assisting with processivity. The inner face of the clamp enables DNA to be threaded through it. Once the polymerase reaches the end of the template or detects double-stranded DNA, the sliding clamp undergoes a conformational change that releases the DNA polymerase. Clamp-loading proteins are used to initially load the clamp, recognizing the junction between template and RNA primers.:274-5
+Clamp proteins form a sliding clamp around DNA, helping the DNA polymerase maintain contact with its template, thereby assisting with processivity. The inner face of the clamp enables DNA to be threaded through it. Once the polymerase reaches the end of the template or detects double-stranded DNA, the sliding clamp undergoes a conformational change that releases the DNA polymerase. Clamp-loading proteins are used to initially load the clamp, recognizing the junction between template and RNA primers.
 
 ## DNA replication proteins
 
@@ -118,8 +127,6 @@ enzymes <-  as.tibble(read.csv("data/DNA_replication_enzymes.csv"))
 
 knitr::kable(enzymes, digits = 2, col.names = c("Enzymes","Function in DNA replication"), longtable = TRUE, booktabs = TRUE,caption = "A list of major DNA replication enzymes that participate in the replisome") %>% kable_styling(latex_options = c("striped", "scale_down", "hold_position")) %>% column_spec(1, width = "10em") %>% column_spec(2, width = "30em")
 ```
-
-Replication machineries consist of factors involved in DNA replication and appearing on template ssDNAs. Replication machineries include primosotors are replication enzymes; DNA polymerase, DNA helicases, DNA clamps and DNA topoisomerases, and replication proteins; e.g. single-stranded DNA binding proteins (SSB). In the replication machineries these components coordinate. In most of the bacteria, all of the factors involved in DNA replication are located on replication forks and the complexes stay on the forks during DNA replication. These replication machineries are called replisomes or DNA replicase systems. These terms are generi terms for proteins located on replication forks. In eukaryotic and some bacterial cells the replisomes are not formed.
 
 ### Termination
 
@@ -140,34 +147,3 @@ After passing through the G1/S checkpoint, DNA must be replicated only once in e
 Activation of S-Cdks in early S phase promotes the destruction or inhibition of individual pre-replication complex components, preventing immediate reassembly. S and M-Cdks continue to block pre-replication complex assembly even after S phase is complete, ensuring that assembly cannot occur again until all Cdk activity is reduced in late mitosis.
 
 Replication of chloroplast and mitochondrial genomes occurs independently of the cell cycle, through the process of D-loop replication.
-
-In vertebrate cells, replication sites concentrate into positions called replication foci. Replication sites can be detected by immunostaining daughter strands and replication enzymes and monitoring GFP-tagged replication factors. By these methods it is found that replication foci of varying size and positions appear in S phase of cell division and their number per nucleus is far smaller than the number of genomic replication forks.
-
-## Prokaryotic DNA replication
-
-Prokaryotic DNA replication is the process by which a prokaryote duplicates its DNA into another copy that is passed on to daughter ells. aeplication is bi-directional and originates at a single origin of replication (OriC). It consists of three steps: Initiation, elongation, and termination.
-
-### Initiation
-
-All cells must finish DNA replication before they can proceed for cell division. Media conditions that support fast growth in bacteria also couples with shorter inter-initiation time in them, i.e. the doubling time in fast growing cells is less as compared to the slow growth. In other words, it is possible that in fast growth conditions the grandmother cells starts replicating its DNA for grand daughter cell. For the same reason, the initiation of DNA replication is highly regulated. Bacterial origins regulate orisome assembly, a nuclei-protein complex assembled on the origin responsible for unwinding the origin and loading all the replication machinery. In *E. coli*, the direction for orisome assembly are built into a short stretch of nucleotide sequence called as origin of replication (oriC) which contains multiple binding sites for the initiator protein DnaA (a highly homologous protein amongst bacterial kingdom). DnaA has four domains with each domain responsible for a specific task. There are 11 DnaA binding sites/boxes on the *E. coli* origin of replication  out of which three boxes R1, R2 and R4 (which have a highly conserved 9 bp consensus sequence 5' - TTATC/ACACA ) are high affinity DnaA boxes. They bind to DnaA-ADP and DnaA-ATP with equal affinities and are bound by DnaA throughout most of the cell cycle and forms a scaffold on which rest of the orisome assembles. The rest eight DnaA boxes are low affinity sites that preferentially bind to DnaA-ATP. During initiation, DnaA bound to high affinity DnaA box R4 donates additional DnaA to the adjacent low affinity site and progressively fill all the low affinity DnaA boxes. Filling of the sites changes origin conformation from its native state. It is hypothesized that DNA stretching by DnaA bound to the origin promotes strand separation which allows more DnaA to bind to the unwound region. The DnaC helicase loader then interacts with the DnaA bound to the single-stranded DNA to recruit the DnaB helicase, which will continue to unwind the DNA as the DnaG primase lays down an RNA primer and DNA Polymerase III holoenzyme begins elongation.
-
-Regulation
-Chromosome replication in bacteria is regulated at the initiation stage. DnaA-ATP is hydrolyzed into the inactive DnaA-ADP by RIDA (Regulatory Inactivation of DnaA), and converted back to the active DnaA-ATP form by DARS (DnaA Reactivating Sequence, which is itself regulated by Fis and IHF). However, the main source of DnaA-ATP is synthesis of new molecules. Meanwhile, several other proteins interact directly with the oriC sequence to regulate initiation, usually by inhibition. In *E. coli* these proteins include DiaA, SeqA, IciA, HU, and ArcA-P, but they vary across other bacterial species. A few other mechanisms in *E. coli* that variously regulate initiation are DDAH (datA-Dependent DnaA Hydrolysis, which is also regulated by IHF), inhibition of the dnaA gene (by the SeqA protein), and reactivation of DnaA by the lipid membrane.
-
-### Elongation
-
-Once priming is complete, DNA polymerase III holoenzyme is loaded into the DNA and replication begins. The catalytic mechanism of DNA polymerase III involves the use of two metal ions in the active site, and a region in the active site that can discriminate between deoxyribonucleotides and ribonucleotides. The metal ions are general divalent cations that help the 3' OH initiate a nucleophilic attack onto the alpha phosphate of the deoxyribonucleotide and orient and stabilize the negatively charged triphosphate on the deoxyribonucleotide. Nucleophilic attack by the 3' OH on the alpha phosphate releases pyrophosphate, which is then subsequently hydrolyzed (by inorganic phosphatase) into two phosphates. This hydrolysis drives DNA synthesis to completion.
-
-Furthermore, DNA polymerase III must be able to distinguish between correctly paired bases and incorrectly paired bases. This is accomplished by distinguishing Watson-Crick base pairs through the use of an active site pocket that is complementary in shape to the structure of correctly paired nucleotides. This pocket has a tyrosine residue that is able to form van der Waals interactions with the correctly paired nucleotide. In addition, dsDNA (double stranded DNA) in the active site has a wider major groove and shallower minor groove that permits the formation of hydrogen bonds with the third nitrogen of purine bases and the second oxygen of pyrimidine bases. Finally, the active site makes extensive hydrogen bonds with the DNA backbone. These interactions result in the DNA polymerase III closing around a correctly paired base. If a base is inserted and incorrectly paired, these interactions could not occur due to disruptions in hydrogen bonding and van der Waals interactions.
-
-DNA is read in the 3' → 5' direction, therefore, nucleotides are synthesized (or attached to the template strand) in the 5' → 3' direction. However, one of the parent strands of DNA is 3' → 5' while the other is 5' → 3'. To solve this, replication occurs in opposite directions. Heading towards the replication fork, the leading strand is synthesized in a continuous fashion, only requiring one primer. On the other hand, the lagging strand, heading away from the replication fork, is synthesized in a series of short fragments known as Okazaki fragments, consequently requiring many primers. The RNA primers of Okazaki fragments are subsequently degraded by RNase H and DNA Polymerase I (exonuclease), and the gaps (or nicks) are filled with deoxyribonucleotides and sealed by the enzyme ligase.
-
-### Rate of replication
-
-The rate of DNA replication in a living cell was first measured as the rate of phage T4 DNA elongation in phage-infected *E. coli*. During the period of exponential DNA increase at 37 °C, the rate was 749 nucleotides per second. The mutation rate per base pair per replication during phage T4 DNA synthesis is 1.7 per 108.
-
-### Termination
-
-Termination of DNA replication in *E. coli* is completed through the use of termination sequences and the Tus protein. These sequences allow the two replication forks to pass through in only one direction, but not the other.
-
-DNA replication initially produces two catenated or linked circular DNA duplexes, each comprising one parental strand and one newly synthesised strand (by nature of semiconservative replication). This catenation can be visualised as two interlinked rings which cannot be separated. Topoisomerase 2 in *E. coli* unlinks or decatenates the two circular DNA duplexes by breaking the phosphodiester bonds present in two successive nucleotides of either parent DNA or newly formed DNA and thereafter the ligating activity ligates that broken DNA strand and so the two DNA get formed.
