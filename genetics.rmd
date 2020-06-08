@@ -86,7 +86,7 @@ DNA normally exists as a double-stranded molecule, coiled into the shape of a do
 (ref:dna) The structure of the DNA double helix. A section of DNA. The bases lie horizontally between the two spiraling strands (based on atomic coordinates of [PDB 1bna](https://www.rcsb.org/structure/1bna) rendered with [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/).)
 
 ```{r dnastruc, fig.cap='(ref:dna)', echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("./figures/dna/dna_surface_transparent.png")
+knitr::include_graphics("./figures/genetics/DNA_1bna.png")
 ```
 
 Genes are arranged linearly along long chains of DNA base-pair sequences. In bacteria, each cell usually contains a single circular genophore, while eukaryotic organisms (such as plants and animals) have their DNA arranged in multiple linear chromosomes. These DNA strands are often extremely long; the largest human chromosome, for example, is about 247 million base pairs in length. The DNA of a chromosome is associated with structural proteins that organize, compact, and control access to the DNA, forming a material called chromatin; in eukaryotes, chromatin is usually composed of nucleosomes, segments of DNA wound around cores of histone proteins. The full set of hereditary material in an organism (usually the combined DNA sequences of all chromosomes) is called the genome.
