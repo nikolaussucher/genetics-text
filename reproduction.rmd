@@ -24,7 +24,7 @@ library(tidyverse)
 library(printr)        
 library(kableExtra)
 
-setwd("~/Dropbox/R/genetics-textbook-master")
+setwd("~/Dropbox/R/genetics-text")
 
 comparison <-  as.tibble(read.csv("data/eukaryote_prokaryote_comp.csv"))
 
@@ -126,7 +126,7 @@ library(tidyverse)
 library(printr)        
 library(kableExtra)
 
-setwd("~/Dropbox/R/genetics-textbook-master")
+setwd("~/Dropbox/R/genetics-text")
 
 mitocomp <-  as.tibble(read.csv("data/mito_meio_comp.csv"))
 

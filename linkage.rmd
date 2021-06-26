@@ -104,7 +104,7 @@ library(tidyverse)
 library(printr)        
 library(kableExtra)
 
-setwd("~/Dropbox/R/genetics-textbook-master")
+setwd("~/Dropbox/R/genetics-text")
 
 data <-  as.tibble(read.csv("data/BSP_experiment.csv"))
 

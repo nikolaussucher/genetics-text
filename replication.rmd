@@ -121,7 +121,7 @@ library(tidyverse)
 library(printr)        
 library(kableExtra)
 
-setwd("~/Dropbox/R/genetics-textbook-master")
+setwd("~/Dropbox/R/genetics-text")
 
 enzymes <-  as.tibble(read.csv("data/DNA_replication_enzymes.csv"))
 
